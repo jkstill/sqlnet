@@ -1,0 +1,9 @@
+
+Oracle is sending one row per packet when XML data is queried (as per pythian client)
+
+Duplicate if possible
+
+see ../test/genfiles for scripts to create xml files that were copied to the server
+
+
+

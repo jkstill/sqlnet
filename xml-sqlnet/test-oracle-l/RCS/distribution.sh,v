@@ -1,0 +1,29 @@
+head	1.1;
+access;
+symbols;
+locks
+	jkstill:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2014.07.18.20.33.11;	author jkstill;	state Exp;
+branches;
+next	;
+
+
+desc
+@initial
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@:
+
+zip -r oracle-xml-excessive-network-traffic.zip README create test
+
+@

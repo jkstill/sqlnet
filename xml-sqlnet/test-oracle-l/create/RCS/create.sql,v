@@ -1,0 +1,55 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2014.07.21.20.02.09;	author jkstill;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.07.18.20.32.29;	author jkstill;	state Exp;
+branches;
+next	;
+
+
+desc
+@initial
+@
+
+
+1.2
+log
+@added purge
+@
+text
+@
+@@@@config
+
+drop table &&v_username..xmltest_2 purge;
+
+create table &&v_username..xmltest_2 (filename varchar2(64), xmldata XMLType, clobdata clob, chardata varchar2(4000))
+pctfree 10 pctused 10 initrans 1 maxtrans 1 storage (initial 8k) lob (clobdata)
+store as lobseg (
+	disable storage in row
+	chunk 16384 pctversion 10 cache storage (initial 2m)
+	index lobidx_clobdata ( storage (initial 4k))
+)
+/
+
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d4 1
+a4 1
+drop table &&v_username..xmltest_2;
+@

@@ -1,0 +1,23 @@
+
+Convert public database links from SQLNET Version 1 -> Version 2
+----------------------------------------------------------------
+
+Scripts:
+
+	jks_db_link.sql		- script to show database link WITH password
+	dblink.sql				- creates db_links table ( already created )
+	linkgen.sql				- generates runtime sql scripts from db_links table
+		dblink_original.sql	- generated script - recreates original Version 1 database links
+		v2_link.sql				- generated script - drops v1 database links - creates v2 database links
+
+
+Procedure:
+
+	login to dv07
+	run linkgen.sql -	do NOT run this again after running v2_link.sql, 
+	                  unless you save dblink_original.sql as it will 
+	                  be overwritten
+
+	run v2_link.sql - this will login to each database, drop the 
+	                  v1 links, and recreate the database links 
+	                  using v2 connect strings

@@ -1,0 +1,11 @@
+
+VIEW_NAME                      TEXT
+------------------------------ ---------------------------------------------
+DBA_DB_LINKS                   select u.name, l.name, l.userid, l.host, l.ct
+                               ime
+                               from sys.link$ l, sys.user$ u
+                               where l.owner# = u.user#
+
+
+1 row selected.
+

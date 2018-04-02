@@ -1,0 +1,11 @@
+
+alter session set tracefile_identifier='SQLDEV-50';
+
+oradebug setmypid
+oradebug event 10079 trace name context forever, level 2
+
+alter session set events '10046 trace name context forever, level 12';
+
+select filename, substr(xmlserialize(content xmldata as clob),1,4000) xmldata from jkstill.xmltest_1;
+
+

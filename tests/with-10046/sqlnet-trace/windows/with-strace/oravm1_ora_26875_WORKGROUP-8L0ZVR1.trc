@@ -1,0 +1,2056 @@
+Trace file /u01/app/oracle/diag/rdbms/oravm/oravm1/trace/oravm1_ora_26875_WORKGROUP-8L0ZVR1.trc
+Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - 64bit Production
+With the Partitioning, Real Application Clusters, Automatic Storage Management, OLAP,
+Data Mining and Real Application Testing options
+ORACLE_HOME = /u01/app/oracle/product/11.2.0/db_1
+System name:	Linux
+Node name:	oravm01.jks.com
+Release:	2.6.18-194.el5
+Version:	#1 SMP Mon Mar 29 22:10:29 EDT 2010
+Machine:	x86_64
+Instance name: oravm1
+Redo thread mounted by this instance: 1
+Oracle process number: 58
+Unix process pid: 26875, image: oracle@oravm01.jks.com
+
+
+*** 2014-02-03 11:05:54.537
+*** SESSION ID:(41.55481) 2014-02-03 11:05:54.537
+*** CLIENT ID:() 2014-02-03 11:05:54.537
+*** SERVICE NAME:(oravm.jks.com) 2014-02-03 11:05:54.537
+*** MODULE NAME:(SQL*Plus) 2014-02-03 11:05:54.537
+*** ACTION NAME:() 2014-02-03 11:05:54.537
+ 
+sqlnet: start test
+WAIT #47968781717184: nam='SQL*Net message to client' ela= 500 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454354558038
+WAIT #47968781717184: nam='SQL*Net message from client' ela= 19415 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454354577721
+CLOSE #47968781717184:c=0,e=135,dep=0,type=1,tim=1391454354578305
+=====================
+PARSING IN CURSOR #47968781672608 len=31 dep=0 uid=90 oct=3 lid=90 tim=1391454354579629 hv=2783852310 ad='b110eca0' sqlid='56bs32ukywdsq'
+select count(*) from dba_tables
+END OF STMT
+PARSE #47968781672608:c=0,e=469,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,plh=1162560845,tim=1391454354579503
+EXEC #47968781672608:c=0,e=774,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,plh=1162560845,tim=1391454354581648
+=====================
+PARSING IN CURSOR #47968781568248 len=597 dep=1 uid=0 oct=2 lid=0 tim=1391454354586435 hv=914163366 ad='b56f3fa0' sqlid='4vs91dcv7u1p6'
+insert into sys.aud$( sessionid,entryid,statement,ntimestamp#, userid,userhost,terminal,action#,returncode, obj$creator,obj$name,auth$privileges,auth$grantee, new$owner,new$name,ses$actions,ses$tid,logoff$pread, logoff$lwrite,logoff$dead,comment$text,spare1,spare2,  priv$used,clientid,sessioncpu,proxy$sid,user$guid, instance#,process#,xid,scn,auditid,  sqlbind,sqltext,obj$edition,dbid)  values(:1,:2,:3,SYS_EXTRACT_UTC(SYSTIMESTAMP),     :4,:5,:6,:7,:8,     :9,:10,:11,:12,     :13,:14,:15,:16,:17,     :18,:19,:20,:21,:22,     :23,:24,:25,:26,:27,     :28,:29,:30,:31,:32,     :33,:34,:35,:36)
+END OF STMT
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=18
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c777ee  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c777c6  bln=32  avl=05  flg=09
+  value="USER$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=22
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=21234,p=0,cr=0,cu=3,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354607174
+STAT #47968781568248 id=1 cnt=0 pid=0 pos=1 obj=0 op='LOAD TABLE CONVENTIONAL  (cr=0 pr=0 pw=0 time=865 us)'
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=19
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c7770e  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c776e6  bln=32  avl=03  flg=09
+  value="TS$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=16
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=19159,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354629887
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=20
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c7754e  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(04) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c77526  bln=32  avl=04  flg=09
+  value="SEG$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=14
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=19709,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354653045
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=21
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c772ae  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(04) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c77286  bln=32  avl=04  flg=09
+  value="OBJ$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=18
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=9999,e=19529,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354676330
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=22
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c76f2e  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(04) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=92c76f06  bln=32  avl=04  flg=09
+  value="TAB$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=4
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=19503,p=0,cr=0,cu=3,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354699103
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=23
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b5186  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(04) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b515e  bln=32  avl=04  flg=09
+  value="OBJ$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=18
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=19240,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354721665
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=24
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b4c46  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(04) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b4c1e  bln=32  avl=04  flg=09
+  value="OBJ$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=18
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=22264,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354748040
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=25
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b4626  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b45fe  bln=32  avl=05  flg=09
+  value="USER$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=02  flg=05
+  value=22
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=19790,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354771307
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=26
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b3ea0  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(08) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b3ee6  bln=32  avl=08  flg=09
+  value="X$KSPPCV"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=06  flg=05
+  value=4294951198
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=25736,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354800517
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=27
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b36e8  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b372e  bln=32  avl=07  flg=09
+  value="X$KSPPI"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=06  flg=05
+  value=4294950998
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=18584,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354823280
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=28
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b2e8e  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(13) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b2e5e  bln=32  avl=13  flg=09
+  value="DEFERRED_STG$"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=03  flg=05
+  value=132
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=9998,e=26094,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354853481
+BINDS #47968781568248:
+ Bind#0
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1ac8  bln=24  avl=05  flg=05
+  value=4009267
+ Bind#1
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a98  bln=24  avl=02  flg=05
+  value=29
+ Bind#2
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a68  bln=24  avl=02  flg=05
+  value=16
+ Bind#3
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df8c4  bln=32  avl=07  flg=09
+  value="JKSTILL"
+ Bind#4
+  oacdty=01 mxl=32(17) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=2ba09a2df83e  bln=32  avl=17  flg=09
+  value="WORKGROUP\8L0ZVR1"
+ Bind#5
+  oacdty=01 mxl=32(07) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d894  bln=32  avl=07  flg=09
+  value="8L0ZVR1"
+ Bind#6
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a38  bln=24  avl=03  flg=05
+  value=103
+ Bind#7
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1a08  bln=24  avl=01  flg=05
+  value=0
+ Bind#8
+  oacdty=01 mxl=32(03) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b2586  bln=32  avl=03  flg=09
+  value="SYS"
+ Bind#9
+  oacdty=01 mxl=32(10) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=617b2556  bln=32  avl=10  flg=09
+  value="DBA_TABLES"
+ Bind#10
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#11
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#12
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#13
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#14
+  oacdty=01 mxl=32(16) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695c00  bln=32  avl=16  flg=09
+  value="---------S------"
+ Bind#15
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19d8  bln=24  avl=03  flg=05
+  value=3324
+ Bind#16
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f19a8  bln=24  avl=00  flg=05
+ Bind#17
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1978  bln=24  avl=00  flg=05
+ Bind#18
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1948  bln=24  avl=00  flg=05
+ Bind#19
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#20
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=c268d820  bln=32  avl=05  flg=09
+  value="still"
+ Bind#21
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1918  bln=24  avl=00  flg=05
+ Bind#22
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18e8  bln=24  avl=00  flg=05
+ Bind#23
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#24
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f18b8  bln=24  avl=00  flg=05
+ Bind#25
+  oacdty=02 mxl=22(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1888  bln=24  avl=00  flg=05
+ Bind#26
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#27
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1858  bln=24  avl=02  flg=05
+  value=1
+ Bind#28
+  oacdty=01 mxl=32(05) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=7fff2d695b68  bln=32  avl=05  flg=09
+  value="26875"
+ Bind#29
+  oacdty=23 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#30
+  oacdty=02 mxl=22(06) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=7fff2d695b50  bln=24  avl=06  flg=09
+  value=228215917
+ Bind#31
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#32
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30eaf8  bln=4000  avl=00  flg=05
+ Bind#33
+  oacdty=112 mxl=4000(4000) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=01 csi=873 siz=4000 off=0
+  kxsbbbfp=2ba09a30db18  bln=4000  avl=00  flg=05
+ Bind#34
+  oacdty=01 mxl=32(00) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=18 fl2=0001 frm=01 csi=873 siz=32 off=0
+  kxsbbbfp=00000000  bln=32  avl=00  flg=09
+ Bind#35
+  oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00
+  oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0
+  kxsbbbfp=2ba09a2f1af8  bln=24  avl=06  flg=05
+  value=1240474558
+EXEC #47968781568248:c=0,e=21098,p=0,cr=0,cu=1,mis=0,r=1,dep=1,og=4,plh=0,tim=1391454354878252
+WAIT #47968781672608: nam='SQL*Net message to client' ela= 480 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454354880454
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 50 outstanding #aio=0 current aio limit=128 new aio limit=130 obj#=-1 tim=1391454354916538
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=130 new aio limit=195 obj#=-1 tim=1391454354945036
+
+*** 2014-02-03 11:05:57.562
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=195 new aio limit=260 obj#=-1 tim=1391454357562099
+
+*** 2014-02-03 11:05:59.120
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 52 outstanding #aio=0 current aio limit=260 new aio limit=325 obj#=-1 tim=1391454359120532
+
+*** 2014-02-03 11:05:59.485
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 56 outstanding #aio=0 current aio limit=325 new aio limit=260 obj#=-1 tim=1391454359485695
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 54 outstanding #aio=0 current aio limit=260 new aio limit=325 obj#=-1 tim=1391454359488366
+
+*** 2014-02-03 11:06:02.210
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=325 new aio limit=260 obj#=-1 tim=1391454362210156
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 53 outstanding #aio=0 current aio limit=260 new aio limit=195 obj#=-1 tim=1391454362211001
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 50 outstanding #aio=0 current aio limit=195 new aio limit=260 obj#=-1 tim=1391454362213310
+
+*** 2014-02-03 11:06:19.033
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=260 new aio limit=195 obj#=-1 tim=1391454379033514
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 47 outstanding #aio=0 current aio limit=195 new aio limit=260 obj#=-1 tim=1391454379036655
+
+*** 2014-02-03 11:06:37.078
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=260 new aio limit=195 obj#=-1 tim=1391454397078151
+WAIT #47968781672608: nam='asynch descriptor resize' ela= 51 outstanding #aio=0 current aio limit=195 new aio limit=130 obj#=-1 tim=1391454397079001
+
+*** 2014-02-03 11:06:54.115
+FETCH #47968781672608:c=6898952,e=59234563,p=0,cr=3301,cu=0,mis=0,r=1,dep=0,og=1,plh=1162560845,tim=1391454414115354
+STAT #47968781672608 id=1 cnt=1 pid=0 pos=1 obj=0 op='SORT AGGREGATE (cr=3301 pr=0 pw=0 time=59234673 us)'
+STAT #47968781672608 id=2 cnt=3127 pid=1 pos=1 obj=0 op='HASH JOIN RIGHT OUTER (cr=3301 pr=0 pw=0 time=59061803 us cost=908 size=450288 card=3127)'
+STAT #47968781672608 id=3 cnt=107 pid=2 pos=1 obj=47 op='INDEX FULL SCAN I_USER2 (cr=1 pr=0 pw=0 time=7281 us cost=1 size=428 card=107)'
+STAT #47968781672608 id=4 cnt=3127 pid=2 pos=2 obj=0 op='HASH JOIN OUTER (cr=3300 pr=0 pw=0 time=58370789 us cost=907 size=437780 card=3127)'
+STAT #47968781672608 id=5 cnt=3127 pid=4 pos=1 obj=0 op='HASH JOIN  (cr=2997 pr=0 pw=0 time=41658827 us cost=824 size=412764 card=3127)'
+STAT #47968781672608 id=6 cnt=107 pid=5 pos=1 obj=47 op='INDEX FULL SCAN I_USER2 (cr=1 pr=0 pw=0 time=4778 us cost=1 size=428 card=107)'
+STAT #47968781672608 id=7 cnt=3127 pid=5 pos=2 obj=0 op='HASH JOIN  (cr=2996 pr=0 pw=0 time=40971452 us cost=823 size=400256 card=3127)'
+STAT #47968781672608 id=8 cnt=3127 pid=7 pos=1 obj=0 op='HASH JOIN OUTER (cr=2035 pr=0 pw=0 time=23566861 us cost=558 size=365859 card=3127)'
+STAT #47968781672608 id=9 cnt=3127 pid=8 pos=1 obj=0 op='HASH JOIN RIGHT OUTER (cr=1732 pr=0 pw=0 time=6751332 us cost=475 size=350224 card=3127)'
+STAT #47968781672608 id=10 cnt=8089 pid=9 pos=1 obj=14 op='TABLE ACCESS FULL SEG$ (cr=236 pr=0 pw=0 time=498465 us cost=65 size=97068 card=8089)'
+STAT #47968781672608 id=11 cnt=3127 pid=9 pos=2 obj=0 op='HASH JOIN  (cr=1496 pr=0 pw=0 time=4238976 us cost=410 size=312700 card=3127)'
+STAT #47968781672608 id=12 cnt=33 pid=11 pos=1 obj=0 op='MERGE JOIN CARTESIAN (cr=38 pr=0 pw=0 time=2737857 us cost=13 size=2343 card=33)'
+STAT #47968781672608 id=13 cnt=1 pid=12 pos=1 obj=0 op='HASH JOIN  (cr=0 pr=0 pw=0 time=2713332 us cost=1 size=68 card=1)'
+STAT #47968781672608 id=14 cnt=1 pid=13 pos=1 obj=0 op='FIXED TABLE FULL X$KSPPI (cr=0 pr=0 pw=0 time=1063162 us cost=0 size=55 card=1)'
+STAT #47968781672608 id=15 cnt=2655 pid=13 pos=2 obj=0 op='FIXED TABLE FULL X$KSPPCV (cr=0 pr=0 pw=0 time=1214086 us cost=0 size=1300 card=100)'
+STAT #47968781672608 id=16 cnt=33 pid=12 pos=2 obj=0 op='BUFFER SORT (cr=38 pr=0 pw=0 time=20723 us cost=13 size=99 card=33)'
+STAT #47968781672608 id=17 cnt=33 pid=16 pos=1 obj=16 op='TABLE ACCESS FULL TS$ (cr=38 pr=0 pw=0 time=15729 us cost=12 size=99 card=33)'
+STAT #47968781672608 id=18 cnt=3127 pid=11 pos=2 obj=4 op='TABLE ACCESS FULL TAB$ (cr=1458 pr=0 pw=0 time=781044 us cost=397 size=90683 card=3127)'
+STAT #47968781672608 id=19 cnt=76367 pid=8 pos=2 obj=36 op='INDEX FAST FULL SCAN I_OBJ1 (cr=303 pr=0 pw=0 time=3890015 us cost=82 size=381830 card=76366)'
+STAT #47968781672608 id=20 cnt=76367 pid=7 pos=2 obj=18 op='TABLE ACCESS FULL OBJ$ (cr=961 pr=0 pw=0 time=4367186 us cost=264 size=840026 card=76366)'
+STAT #47968781672608 id=21 cnt=76367 pid=4 pos=2 obj=36 op='INDEX FAST FULL SCAN I_OBJ1 (cr=303 pr=0 pw=0 time=3847517 us cost=82 size=610928 card=76366)'
+WAIT #47968781672608: nam='SQL*Net message from client' ela= 7813 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454414128553
+FETCH #47968781672608:c=0,e=99,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=0,plh=1162560845,tim=1391454414129063
+WAIT #47968781672608: nam='SQL*Net message to client' ela= 427 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454414129956
+WAIT #47968781672608: nam='SQL*Net message from client' ela= 15000 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1391454414145111
+CLOSE #47968781672608:c=0,e=137,dep=0,type=1,tim=1391454414145645
+=====================
+PARSING IN CURSOR #47968781671328 len=55 dep=0 uid=90 oct=42 lid=90 tim=1391454414147101 hv=2217940283 ad='0' sqlid='06nvwn223659v'
+alter session set events '10046 trace name context off'
+END OF STMT
+PARSE #47968781671328:c=0,e=747,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=0,plh=0,tim=1391454414146996
+EXEC #47968781671328:c=0,e=1167,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=0,plh=0,tim=1391454414149059
+sqlnet: end test

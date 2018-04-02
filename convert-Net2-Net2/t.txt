@@ -1,0 +1,16 @@
+
+                                                    NEW
+INST DB_LINK                        OLDHOST         HOST USERNAME
+---- ------------------------------ --------------- ---- ----------
+DB01 CEDPR02.BCBSO.BENCHMARK.ORG    t:aslan:pr02    pr02 EMC
+DV01 EMC.DV02                       T:beowulf:dv02  dv02 EMCLINK
+DV03 EMCPR02.BCBSO.BENCHMARK.ORG    t:aslan:pr02    pr02 EMC
+DV04 EMCPR02.BCBSO.BENCHMARK.ORG    t:aslan:pr02    pr02 EMC
+DV05 EMCPR02.BCBSO.BENCHMARK.ORG    t:aslan:pr02    pr02 EMC
+PR02 EMC.DB01                       T:aslan:db01    db01 EMCLINK
+PR03 CED_DB01.BCBSO.BENCHMARK.ORG   T:aslan:db01    db01 CED
+PR03 DB01.BCBSO.BENCHMARK.ORG       t:aslan:db01    db01 USSLINK
+PR03 EMC.PR02                       t:aslan:pr02    pr02 EMCLINK
+
+9 rows selected.
+

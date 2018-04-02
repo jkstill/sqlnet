@@ -1,0 +1,99 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2014.07.18.20.39.13;	author jkstill;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@	'schema/acl.xsd.10.2',
+	'schema/acl.xsd.11.0',
+	'schema/acl.xsd.11.2',
+	'schema/dav.xsd.10.2',
+	'schema/dav.xsd.11.0',
+	'schema/kusclust.xsd',
+	'schema/kusclus.xsd',
+	'schema/kuscnstr.xsd',
+	'schema/kuscomm.xsd',
+	'schema/kuscomp.xsd',
+	'schema/kusctxt.xsd',
+	'schema/kusctx.xsd',
+	'schema/kusdblkt.xsd',
+	'schema/kusdblk.xsd',
+	'schema/kusfgat.xsd',
+	'schema/kusfga.xsd',
+	'schema/kusindex.xsd',
+	'schema/kusindxt.xsd',
+	'schema/kusmvlt.xsd',
+	'schema/kusmvl.xsd',
+	'schema/kusmvt.xsd',
+	'schema/kusmv.xsd',
+	'schema/kusparse.xsd',
+	'schema/kusquetbt.xsd',
+	'schema/kusquetb.xsd',
+	'schema/kusquet.xsd',
+	'schema/kusque.xsd',
+	'schema/kusrlsct.xsd',
+	'schema/kusrlsc.xsd',
+	'schema/kusrlsgt.xsd',
+	'schema/kusrlsg.xsd',
+	'schema/kusrlspt.xsd',
+	'schema/kusrlsp.xsd',
+	'schema/kusrolet.xsd',
+	'schema/kusrole.xsd',
+	'schema/kusseqt.xsd',
+	'schema/kusseq.xsd',
+	'schema/kussynt.xsd',
+	'schema/kussyn.xsd',
+	'schema/kustable.xsd',
+	'schema/kustablt.xsd',
+	'schema/kustblst.xsd',
+	'schema/kustbls.xsd',
+	'schema/kustrigt.xsd',
+	'schema/kustrig.xsd',
+	'schema/kustypbt.xsd',
+	'schema/kustypb.xsd',
+	'schema/kustype.xsd',
+	'schema/kustypt.xsd',
+	'schema/kususert.xsd',
+	'schema/kususer.xsd',
+	'schema/kusviewt.xsd',
+	'schema/kusview.xsd',
+	'schema/ref-2004-08-10.xsd',
+	'schema/ref-2006-02-27.xsd',
+	'schema/rescfg.xsd.11.1',
+	'schema/rescfg.xsd.11.2',
+	'schema/xbrldi-2006.xsd',
+	'schema/xbrldt-2005.xsd',
+	'schema/xbrl-instance-2003-12-31.xsd',
+	'schema/xbrl-linkbase-2003-12-31.xsd',
+	'schema/xdbconfig.xsd.10.2',
+	'schema/xdbconfig.xsd.11.0',
+	'schema/xdbconfig.xsd.11.2',
+	'schema/xl-2003-12-31.xsd',
+	'schema/xlink-2003-12-31.xsd',
+	'schema/xmlcsx.xsd.11.0',
+	'schema/xmltr.xsd.11.0',
+	'schema/xsaclids.xsd',
+	'schema/xsdatasec.xsd',
+	'schema/xsdatasec.xsd.11.1',
+	'schema/xsprin.xsd',
+	'schema/xsprin.xsd.11.1',
+	'schema/xsroleset.xsd',
+	'schema/xsseccls.xsd',
+	'schema/xsseccls.xsd.11.1'
+@

@@ -1,0 +1,8 @@
+sqlplus / as sysdba
+strace -e trace=open,access,stat tnsping js03 2>&1  >/dev/null | grep '\.ora'
+strace -e trace=open,access,stat tnsping notfound 2>&1  >/dev/null | grep '\.ora'
+strace -e trace=open,access,stat tnsping //localhost:1521/js03 2>&1  >/dev/null | grep '\.ora'
+strace -e trace=open,access,stat tnsping //localhost:1521/js03 2>&1  >/dev/null | grep '\.ora' | cut -f2 -d\"
+mv ~/.tnsnames.ora  ~/.tnsnames.old
+mv ~/.tnsnames.old  ~/.tnsnames.ora
+

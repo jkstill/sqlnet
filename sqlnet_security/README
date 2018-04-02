@@ -1,0 +1,29 @@
+
+This is just a test case to prove that SQL92_Security has no 
+effect on the table owner, only on those with privs to the 
+table in question.
+
+Test case:
+
+SQL92_security = false;
+
+Create table as user A
+Grant delete on table to user B
+
+As user A:
+ delete from table where id = 1;
+ rollback
+
+As user b:
+ delete from table where id = 1;
+ rollback
+
+Both tests should succeed.
+
+
+SQL92_security = true;
+
+Perform same tests as previous.
+DELETE should fail for user B
+
+

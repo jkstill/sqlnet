@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2014.07.18.20.32.29;	author jkstill;	state Exp;
+branches;
+next	;
+
+
+desc
+@initial
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@
+@@@@config
+
+create user &&v_username identified by &&v_password;
+
+grant sysdba,dba to &&v_username;
+
+
+@

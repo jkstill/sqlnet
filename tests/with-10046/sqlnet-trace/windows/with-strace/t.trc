@@ -1,0 +1,18 @@
+strace-26875.trc-26875 11:05:54.943716 lseek(6, 0, SEEK_CUR) = 613277 <0.000012>
+strace-26875.trc-26875 11:05:54.943768 write(6, "[03-FEB-2014 11:05:54:943] nsmor"..., 40) = 40 <0.000018>
+strace-26875.trc-26875 11:05:54.943829 write(6, "testing for MOREDATA from transp"..., 36) = 36 <0.000455>
+strace-26875.trc:26875 11:05:54.944360 poll([{fd=17, events=POLLIN|POLLRDNORM}], 1, 0) = 0 (Timeout) <0.000013>
+strace-26875.trc-26875 11:05:54.944419 gettimeofday({1391454354, 944436}, NULL) = 0 <0.000012>
+strace-26875.trc-26875 11:05:54.944482 lseek(6, 0, SEEK_CUR) = 613353 <0.000011>
+strace-26875.trc-26875 11:05:54.944531 write(6, "[03-FEB-2014 11:05:54:944] sntpo"..., 39) = 39 <0.000012>
+strace-26875.trc-26875 11:05:54.979974 lseek(6, 0, SEEK_CUR) = 613517 <0.000012>
+strace-26875.trc-26875 11:05:54.980029 write(6, "[03-FEB-2014 11:05:54:979] nsmor"..., 40) = 40 <0.000026>
+strace-26875.trc-26875 11:05:54.980108 write(6, "testing for MOREDATA from transp"..., 36) = 36 <0.000014>
+strace-26875.trc:26875 11:05:54.980159 poll([{fd=17, events=POLLIN|POLLRDNORM}], 1, 0) = 0 (Timeout) <0.000013>
+strace-26875.trc-26875 11:05:54.980207 gettimeofday({1391454354, 980223}, NULL) = 0 <0.000011>
+strace-26875.trc-26875 11:05:54.980263 lseek(6, 0, SEEK_CUR) = 613593 <0.000011>
+strace-26875.trc-26875 11:05:54.980311 write(6, "[03-FEB-2014 11:05:54:980] sntpo"..., 39) = 39 <0.000012>
+strace-26875.trc-26875 11:05:55.003725 lseek(6, 0, SEEK_CUR) = 613757 <0.000015>
+strace-26875.trc-26875 11:05:55.003779 write(6, "[03-FEB-2014 11:05:55:003] nsmor"..., 40) = 40 <0.000014>
+strace-26875.trc-26875 11:05:55.003833 write(6, "testing for MOREDATA from transp"..., 36) = 36 <0.000012>
+strace-26875.trc:26875 11:05:55.003880 poll([{fd=17, events=POLLIN|POLLRDNORM}], 1, 0) = 0 (Timeout) <0.000013>

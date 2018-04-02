@@ -1,0 +1,298 @@
+execve("/u01/app/oracle/product/11.2.0/db/bin/tnsping", ["tnsping", "js03"], [/* 29 vars */]) = 0
+brk(0)                                  = 0x194b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0fc10e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/tls/x86_64/libclntsh.so.11.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/u01/app/oracle/product/11.2.0/db/lib/tls/x86_64", 0x7fff9ddf5670) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/tls/libclntsh.so.11.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/u01/app/oracle/product/11.2.0/db/lib/tls", 0x7fff9ddf5670) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/x86_64/libclntsh.so.11.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/u01/app/oracle/product/11.2.0/db/lib/x86_64", 0x7fff9ddf5670) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libclntsh.so.11.1", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\326G\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=53793730, ...}) = 0
+mmap(NULL, 44472168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb0f96a4000
+mprotect(0x7fb0fbd22000, 2093056, PROT_NONE) = 0
+mmap(0x7fb0fbf21000, 1855488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x267d000) = 0x7fb0fbf21000
+mmap(0x7fb0fc0e6000, 161640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb0fc0e6000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libnnz11.so", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\326\4\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=7996693, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f96a3000
+mmap(NULL, 3983936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb0f92d6000
+mprotect(0x7fb0f9560000, 1044480, PROT_NONE) = 0
+mmap(0x7fb0f965f000, 270336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x289000) = 0x7fb0f965f000
+mmap(0x7fb0f96a1000, 6720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb0f96a1000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=85443, ...}) = 0
+mmap(NULL, 85443, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb0f92c1000
+close(3)                                = 0
+open("/lib64/libdl.so.2", O_RDONLY)     = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\r@\3234\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=22536, ...}) = 0
+mmap(0x34d3400000, 2109696, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x34d3400000
+mprotect(0x34d3402000, 2097152, PROT_NONE) = 0
+mmap(0x34d3602000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x34d3602000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libm.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240> Z7\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=598816, ...}) = 0
+mmap(0x375a200000, 2633944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x375a200000
+mprotect(0x375a283000, 2093056, PROT_NONE) = 0
+mmap(0x375a482000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x82000) = 0x375a482000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libpthread.so.0", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\\\300\3234\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=145672, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92c0000
+mmap(0x34d3c00000, 2212768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x34d3c00000
+mprotect(0x34d3c17000, 2097152, PROT_NONE) = 0
+mmap(0x34d3e17000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x34d3e17000
+mmap(0x34d3e19000, 13216, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x34d3e19000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libnsl.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libnsl.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libnsl.so.1", O_RDONLY)    = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360?\300\3444\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=116136, ...}) = 0
+mmap(0x34e4c00000, 2198192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x34e4c00000
+mprotect(0x34e4c16000, 2093056, PROT_NONE) = 0
+mmap(0x34e4e15000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x34e4e15000
+mmap(0x34e4e17000, 6832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x34e4e17000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libc.so.6", O_RDONLY)      = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\355\201\3234\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1912928, ...}) = 0
+mmap(0x34d3800000, 3737768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x34d3800000
+mprotect(0x34d3987000, 2097152, PROT_NONE) = 0
+mmap(0x34d3b87000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0x34d3b87000
+mmap(0x34d3b8c000, 18600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x34d3b8c000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libaio.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libaio.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libaio.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libaio.so.1", O_RDONLY)    = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\5@\3234\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=5624, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92bf000
+mmap(0x34d3400000, 2099840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb0f90be000
+mprotect(0x7fb0f90bf000, 2093056, PROT_NONE) = 0
+mmap(0x7fb0f92be000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7fb0f92be000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f90bd000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f90bc000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f90bb000
+arch_prctl(ARCH_SET_FS, 0x7fb0f90bc700) = 0
+mprotect(0x34d3b87000, 16384, PROT_READ) = 0
+mprotect(0x34e4e15000, 4096, PROT_READ) = 0
+mprotect(0x34d3e17000, 4096, PROT_READ) = 0
+mprotect(0x375a482000, 4096, PROT_READ) = 0
+mprotect(0x34d3602000, 4096, PROT_READ) = 0
+mprotect(0x34d321f000, 4096, PROT_READ) = 0
+munmap(0x7fb0f92c1000, 85443)           = 0
+set_tid_address(0x7fb0f90bc9d0)         = 10150
+set_robust_list(0x7fb0f90bc9e0, 0x18)   = 0
+futex(0x7fff9ddf5f7c, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7fff9ddf5f7c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fb0f90bc700) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x34d3c05a90, [], SA_RESTORER|SA_SIGINFO, 0x34d3c0f520}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x34d3c05b20, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x34d3c0f520}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+brk(0)                                  = 0x194b000
+brk(0x196c000)                          = 0x196c000
+mmap(NULL, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f9098000
+futex(0x34d36030ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libociei.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libociicus.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/nls/data/lx1boot.nlb", O_RDONLY) = 3
+read(3, "\0\0\0\3\0\4 \v\260W\0\0\230\363\216\0\0\0\0\0\1\0E\0\276\0\304\1\32\2,\2"..., 48) = 48
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 22400) = 22400
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/nls/data/lx00001.nlb", O_RDONLY) = 3
+read(3, "\0\0\0\3\0\4 \v\267\3\0\0s\2\0\0\0\0\0\0\0\0\0\0\0Z\1\0\0\0\0\0"..., 92) = 92
+read(3, "\3\0\0\0\1\0\1\0\1\0`\0\0\0\4\0\6\0\10\0\n\0\20\0\30\0 \0(\0000\0"..., 859) = 859
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/nls/data/lx20001.nlb", O_RDONLY) = 3
+read(3, "\0\0\0\3\0\4 \v9\33\0\0\215\21\0\0\0\0\0\0\2\0\0\0\0Z\1\0\0\0\0\0"..., 92) = 92
+read(3, "\1\0\37\0\t\0\2\0\0\0\0\0\0\0\0\0\0\0?\0\0\0\0\1\0\0\0\0\0\0\0\0"..., 6877) = 6877
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/nls/data/lx10001.nlb", O_RDONLY) = 3
+read(3, "\0\0\0\3\0\4 \vt\4\0\0\220\3\0\0\0\0\0\0\1\0\0\0\0Z\1\0\0\0\0\0"..., 92) = 92
+read(3, "\3\0\0\0\1\0\1\0\0\0\0\0\0\0\4\0\1\0\2\0\2\0\1\0\1\0\0\0\0\0\0\0"..., 1048) = 1048
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/nls/data/lx40011.nlb", O_RDONLY) = 3
+read(3, "\0\0\0\5\0\4 \vaV\0\0aV\0\0\0\0\0\0\4\0\0\0\0Z\1\0\0\0\0\0"..., 92) = 92
+read(3, "\0\0\0\0(\1\0\0,\1\0\0000\1\0\0004\1\0\0<A\0\0TF\0\0TV\0\0"..., 22021) = 22021
+close(3)                                = 0
+socket(PF_INET6, SOCK_DGRAM, IPPROTO_IP) = 3
+bind(3, {sa_family=AF_INET6, sin6_port=htons(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, 28) = 0
+close(3)                                = 0
+access("/u01/app/oracle/product/11.2.0/db/network/admin/sqlnet.ora", F_OK) = 0
+open("/u01/app/oracle/product/11.2.0/db/network/admin/sqlnet.ora", O_RDONLY) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=581, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d5000
+read(3, "# sqlnet.ora Network Configurati"..., 4096) = 581
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d5000, 4096)            = 0
+open("/etc/localtime", O_RDONLY)        = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2875, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2875, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d5000
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 2875
+lseek(3, -1838, SEEK_CUR)               = 1037
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 1838
+close(3)                                = 0
+munmap(0x7fb0f92d5000, 4096)            = 0
+fstat(1, {st_mode=S_IFREG|0664, st_size=11972, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d5000
+write(1, "\nTNS Ping Utility for Linux: Ver"..., 143
+TNS Ping Utility for Linux: Version 11.2.0.4.0 - Production on 27-OCT-2014 21:51:16
+
+Copyright (c) 1997, 2013, Oracle.  All rights reserved.
+
+) = 143
+access("/u01/app/oracle/product/11.2.0/db/network/admin/sqlnet.ora", F_OK) = 0
+open("/u01/app/oracle/product/11.2.0/db/network/admin/sqlnet.ora", O_RDONLY) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=581, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d4000
+read(3, "# sqlnet.ora Network Configurati"..., 4096) = 581
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d4000, 4096)            = 0
+access("/home/jkstill/.tnsnames.ora", F_OK) = -1 ENOENT (No such file or directory)
+access("/etc/tnsnames.ora", F_OK)       = -1 ENOENT (No such file or directory)
+access("/u01/app/oracle/product/11.2.0/db/network/admin/tnsnames.ora", F_OK) = 0
+stat("/u01/app/oracle/product/11.2.0/db/network/admin/tnsnames.ora", {st_mode=S_IFREG|0600, st_size=322, ...}) = 0
+open("/u01/app/oracle/product/11.2.0/db/network/admin/tnsnames.ora", O_RDONLY) = -1 EACCES (Permission denied)
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=10150, groups=00000000}, [12]) = 0
+sendto(3, "\24\0\0\0\26\0\1\3\304 OT\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"0\0\0\0\24\0\2\0\304 OT\246'\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 108
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"@\0\0\0\24\0\2\0\304 OT\246'\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 128
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\304 OT\246'\0\0\0\0\0\0\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_FILE, path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY)    = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1688, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d4000
+read(3, "#\n# /etc/nsswitch.conf\n#\n# An ex"..., 4096) = 1688
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d4000, 4096)            = 0
+open("/etc/host.conf", O_RDONLY)        = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d4000
+read(3, "multi on\norder hosts,bind\n", 4096) = 26
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d4000, 4096)            = 0
+futex(0x34d3b8f384, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/etc/resolv.conf", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d4000
+read(3, "# Generated by NetworkManager\ndo"..., 4096) = 83
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d4000, 4096)            = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=85443, ...}) = 0
+mmap(NULL, 85443, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb0f9083000
+close(3)                                = 0
+open("/lib64/libnss_files.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20!\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=61624, ...}) = 0
+mmap(NULL, 2147728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb0f8e76000
+mprotect(0x7fb0f8e82000, 2093056, PROT_NONE) = 0
+mmap(0x7fb0f9081000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fb0f9081000
+close(3)                                = 0
+mprotect(0x7fb0f9081000, 4096, PROT_READ) = 0
+munmap(0x7fb0f9083000, 85443)           = 0
+open("/etc/hosts", O_RDONLY|O_CLOEXEC)  = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fstat(3, {st_mode=S_IFREG|0644, st_size=105, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0f92d4000
+read(3, "127.0.0.1   localhost ora11net01"..., 4096) = 105
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fb0f92d4000, 4096)            = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libnss_dns.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libnss_dns.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=85443, ...}) = 0
+mmap(NULL, 85443, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb0f9083000
+close(3)                                = 0
+open("/lib64/libnss_dns.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\20\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=27424, ...}) = 0
+mmap(NULL, 2117880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb0f8c70000
+mprotect(0x7fb0f8c75000, 2093056, PROT_NONE) = 0
+mmap(0x7fb0f8e74000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fb0f8e74000
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/lib/libresolv.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/u01/app/oracle/product/11.2.0/db/lib/libresolv.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/lib64/libresolv.so.2", O_RDONLY) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3008@\3254\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=113904, ...}) = 0
+mmap(0x34d5400000, 2202248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x34d5400000
+mprotect(0x34d5416000, 2097152, PROT_NONE) = 0
+mmap(0x34d5616000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x34d5616000
+mmap(0x34d5618000, 6792, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x34d5618000
+close(3)                                = 0
+mprotect(0x34d5616000, 4096, PROT_READ) = 0
+mprotect(0x7fb0f8e74000, 4096, PROT_READ) = 0
+munmap(0x7fb0f9083000, 85443)           = 0
+socket(PF_INET, SOCK_DGRAM|SOCK_NONBLOCK, IPPROTO_IP) = 3
+connect(3, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.1.2")}, 16) = 0
+poll([{fd=3, events=POLLOUT}], 1, 0)    = 1 ([{fd=3, revents=POLLOUT}])
+sendto(3, "\267\253\1\0\0\1\0\0\0\0\0\0\4js03\3jks\3com\0\0\1\0\1", 30, MSG_NOSIGNAL, NULL, 0) = 30
+poll([{fd=3, events=POLLIN|POLLOUT}], 1, 5000) = 1 ([{fd=3, revents=POLLOUT}])
+sendto(3, "\300]\1\0\0\1\0\0\0\0\0\0\4js03\3jks\3com\0\0\34\0\1", 30, MSG_NOSIGNAL, NULL, 0) = 30
+poll([{fd=3, events=POLLIN}], 1, 4999)  = 1 ([{fd=3, revents=POLLIN}])
+ioctl(3, FIONREAD, [30])                = 0
+recvfrom(3, "\267\253\201\203\0\1\0\0\0\0\0\0\4js03\3jks\3com\0\0\1\0\1", 2048, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.1.2")}, [16]) = 30
+poll([{fd=3, events=POLLIN}], 1, 4995)  = 1 ([{fd=3, revents=POLLIN}])
+ioctl(3, FIONREAD, [30])                = 0
+recvfrom(3, "\300]\201\203\0\1\0\0\0\0\0\0\4js03\3jks\3com\0\0\34\0\1", 2018, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.1.2")}, [16]) = 30
+close(3)                                = 0
+open("/u01/app/oracle/product/11.2.0/db/network/mesg/tnsus.msb", O_RDONLY) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\25\23\"\1\23\3\t\t\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256) = 256
+brk(0x198d000)                          = 0x198d000
+lseek(3, 512, SEEK_SET)                 = 512
+read(3, "\2331\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512) = 512
+lseek(3, 1024, SEEK_SET)                = 1024
+read(3, "\t\0\22\0\32\0&\0-\0F\0N\0U\0\\\0k\0w\0\201\0\212\0\223\0\321\0\334\0"..., 172) = 172
+lseek(3, 27648, SEEK_SET)               = 27648
+read(3, "\16\0\265\r\0\0\\\0\266\r\0\0h\0\267\r\0\0\177\0\270\r\0\0\230\0\271\r\0\0\275\0"..., 512) = 512
+lseek(3, 27136, SEEK_SET)               = 27136
+read(3, "\f\0\331\t\0\0P\0\334\t\0\0\215\0\335\t\0\0\263\0\336\t\0\0\343\0\255\r\0\0\17\1"..., 512) = 512
+write(1, "Used parameter files:\n/u01/app/o"..., 116Used parameter files:
+/u01/app/oracle/product/11.2.0/db/network/admin/sqlnet.ora
+
+TNS-03505: Failed to resolve name
+) = 116
+close(3)                                = 0
+brk(0x198c000)                          = 0x198c000
+exit_group(1)                           = ?

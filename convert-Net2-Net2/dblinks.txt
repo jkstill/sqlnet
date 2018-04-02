@@ -1,0 +1,20 @@
+
+INSTANCE DB_LINK                        OWNER      HOST             USERNAME  
+-------- ------------------------------ ---------- ---------------- --------
+DB01     CEDPR02.BCBSO.BENCHMARK.ORG    PUBLIC     t:aslan:pr02     EMC       
+
+DV01     EMC.DV02                       PUBLIC     T:beowulf:dv02   EMCLINK  
+
+DV03     EMCPR02.BCBSO.BENCHMARK.ORG    PUBLIC     t:aslan:pr02     EMC     
+
+DV04     EMCPR02.BCBSO.BENCHMARK.ORG    PUBLIC     t:aslan:pr02     EMC    
+
+DV05     EMCPR02.BCBSO.BENCHMARK.ORG    PUBLIC     t:aslan:pr02     EMC   
+
+PR02     EMC.DB01                       PUBLIC     T:aslan:db01     EMCLINK 
+
+PR03     CED_DB01.BCBSO.BENCHMARK.ORG   PUBLIC     T:aslan:db01     CED    
+         DB01.BCBSO.BENCHMARK.ORG       PUBLIC     t:aslan:db01     USSLINK 
+         EMC.PR02                       PUBLIC     t:aslan:pr02     EMCLINK 
+
+

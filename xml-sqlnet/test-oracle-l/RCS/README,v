@@ -1,0 +1,194 @@
+head	1.3;
+access;
+symbols;
+locks
+	jkstill:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2014.07.21.20.57.02;	author jkstill;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2014.07.21.20.32.55;	author jkstill;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.07.18.20.33.11;	author jkstill;	state Exp;
+branches;
+next	;
+
+
+desc
+@initial
+@
+
+
+1.3
+log
+@more info
+@
+text
+@
+When querying XMLType data over the local network all is fine.
+
+When however that same data is queried remotely, the large number of network packets
+sent as an apparent result of network coordination between the oracle client and the
+database results in severe impact on performance.
+
+We need to know what, if anything, can be done to reduce the number of network packets required for XML data.
+
+The following test case shows the problem.
+
+Note: see oracle-xml-excessive-network-traffic.zip for full test case SQL
+
+Test Table
+
+13:03:31 ora112304a.jks.com - sys@@js02 SQL> desc xmltest.xmltest_2
+Name                                               Null?    Type
+-------------------------------------------------- -------- ----------------------------------
+FILENAME                                                    VARCHAR2(64)
+XMLDATA                                                     XMLTYPE STORAGE BINARY
+CLOBDATA                                                    CLOB
+CHARDATA               
+ 
+There are 76 rows in the test table.
+ 
+The CHARDATA column contains up to the first 4000 bytes of data from the XMLData column.
+The CLOBDATA column contains the same data as XMLDATA, but as a CLOB.
+ 
+Each test query selects at most 4000 bytes from the %DATA columns to try and have some testing parity, as varchar2 is limited to 4k
+
+For each query, event 10079 level 2 was set, resulting in a trace file for each query.
+(Trace files included in the attached file oracle-xml-excessive-network-traffic.zip)
+
+The number of network packets can be determined for each trace file:
+
+grep -c 'bytes sent' *-10046.trc
+  js02_ora_15285_VARCHAR-10046.trc:31
+  js02_ora_15304_CLOB-10046.trc:2576
+  js02_ora_15324_XMLDATA-10046.trc:2576
+
+
+The amount of data sent can also be easily seen:
+
+for f in *10046.trc
+do
+ echo "###  $f  ###"
+ grep  'bytes sent' $f | sed -e s/'(overflow)'// |  awk '{ x = x + $1 } END{ print x}'
+done
+
+###  js02_ora_15285_VARCHAR-10046.trc  ###
+185169
+###  js02_ora_15304_CLOB-10046.trc  ###
+866357
+###  js02_ora_15324_XMLDATA-10046.trc  ###
+866359
+###  js02_ora_15344_XMLSERIAL-10046.trc  ###
+866361
+
+The real issue however is the number of network packets sent.
+
+The following table illustrates the problem.
+While a second or two may be tolerable
+
+=======================================================================
+|           |                 | Cumulative         | Cumulative       |
+| Data Type | Network Packets | Latency at 0.00133 | Latency at 0.032 |
+=======================================================================
+| clob      |     2576        |    3.42            |    82.43         |
+| varchar2  |       31        |    0.04            |     0.99         |
+| xmltype   |     2576        |    3.42            |    82.43         |
+=======================================================================
+
+In this case, the query that took a somewhat tolerable 3.42 seconds on a local server now take 1.3 minutes when queried remotely.
+
+Note: These latency values are from a couple of my own servers, 1 local and 1 remote, just for testing purposes
+
+(local)
+--- watson ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 99026ms
+rtt min/avg/max/mdev = 0.113/1.328/16.687/2.974 ms
+
+(remote)
+--- myserver.com ping statistics ---
+100 packets transmitted, 100 received, 0% packet loss, time 99177ms
+rtt min/avg/max/mdev = 20.615/31.531/50.563/5.514 ms
+
+###################################################################################################
+## Create the test case
+###################################################################################################
+
+table_name
+cd create
+
+logon as oracle user that has permissisions on oracle directory XMLDIR (dba account)
+
+config.sql: defines test user
+create_user.sql:  create test user
+create.sql: create the xmltest_2 table
+insert.sql: populate the xmltest_2 table
+
+Note: these tests need to be run remotely over sqlnet
+
+cd test
+
+modify the *_query.sql scripts for the correct username
+
+logon to the database as sysdba
+sysdba is required to set the 10079 event
+
+run the following scripts
+  clob_query.sql
+  xml_query.sql
+  char_query.sql
+
+get the tracefiles for each session
+
+Get count of IFC (sqlnet packets)
+
+grep -c ^IFC *10046.trc
+  js02_ora_13729_VARCHAR-10046.trc:42
+  js02_ora_13749_CLOB-10046.trc:5152
+  js02_ora_13769_XMLDATA-10046.trc:5152
+
+
+Get count of sqlnet waits:
+
+grep -c 'SQL\*Net message' *10046.trc
+  js02_ora_13729_VARCHAR-10046.trc:19
+  js02_ora_13749_CLOB-10046.trc:5149
+  js02_ora_13769_XMLDATA-10046.trc:5149
+
+
+@
+
+
+1.2
+log
+@added explanatory text
+@
+text
+@a1 2
+
+
+d8 2
+d31 30
+d73 3
+a75 1
+These latency values are from a couple of my own servers, 1 local and 1 remote, just for testing purposes
+a85 1
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 59
+@

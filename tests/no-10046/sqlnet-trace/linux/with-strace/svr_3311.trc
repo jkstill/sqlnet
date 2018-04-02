@@ -1,0 +1,1960 @@
+[03-FEB-2014 13:51:43:013] --- TRACE CONFIGURATION INFORMATION FOLLOWS ---
+[03-FEB-2014 13:51:43:013] New trace stream is /u01/app/oracle/product/11.2.0/db_1/network/trace/svr_3311.trc
+[03-FEB-2014 13:51:43:013] New trace level is 6
+[03-FEB-2014 13:51:43:013] --- TRACE CONFIGURATION INFORMATION ENDS ---
+[03-FEB-2014 13:51:43:013] --- PARAMETER SOURCE INFORMATION FOLLOWS ---
+[03-FEB-2014 13:51:43:013] Attempted load of system pfile source /u01/app/oracle/product/11.2.0/db_1/network/admin/sqlnet.ora
+[03-FEB-2014 13:51:43:013] Parameter source loaded successfully
+[03-FEB-2014 13:51:43:013] 
+[03-FEB-2014 13:51:43:013]  -> PARAMETER TABLE LOAD RESULTS FOLLOW <-
+[03-FEB-2014 13:51:43:013] Successful parameter table load
+[03-FEB-2014 13:51:43:013]  -> PARAMETER TABLE HAS THE FOLLOWING CONTENTS <-
+[03-FEB-2014 13:51:43:013]   DIAG_ADR_ENABLED = OFF
+[03-FEB-2014 13:51:43:013]   SQLNET.EXPIRE_TIME = 1
+[03-FEB-2014 13:51:43:013]   TRACE_LEVEL_SERVER = admin
+[03-FEB-2014 13:51:43:013]   TRACE_UNIQUE_CLIENT = on
+[03-FEB-2014 13:51:43:013]   TRACE_TIMESTAMP_SERVER = true
+[03-FEB-2014 13:51:43:013] --- PARAMETER SOURCE INFORMATION ENDS ---
+[03-FEB-2014 13:51:43:013] --- LOG CONFIGURATION INFORMATION FOLLOWS ---
+[03-FEB-2014 13:51:43:013] Log stream will be "/u01/app/oracle/product/11.2.0/db_1/network/log/sqlnet.log"
+[03-FEB-2014 13:51:43:013] Log stream validation not requested
+[03-FEB-2014 13:51:43:013] --- LOG CONFIGURATION INFORMATION ENDS ---
+
+[03-FEB-2014 13:51:43:013] nlstdipi: entry
+[03-FEB-2014 13:51:43:013] nlstdipi: exit
+[03-FEB-2014 13:51:43:013] nagblini: entry
+[03-FEB-2014 13:51:43:013] nau_gin: entry
+[03-FEB-2014 13:51:43:013] nau_gparams: entry
+[03-FEB-2014 13:51:43:013] nam_gbp: Reading parameter "sqlnet.authentication_required" from parameter file
+[03-FEB-2014 13:51:43:013] nam_gbp: Parameter not found
+[03-FEB-2014 13:51:43:013] nau_gparams: Using default value "FALSE"
+[03-FEB-2014 13:51:43:013] nau_gslf: entry
+[03-FEB-2014 13:51:43:013] nam_gic: entry
+[03-FEB-2014 13:51:43:014] nam_gic: Counting # of items in "sqlnet.authentication_services" parameter
+[03-FEB-2014 13:51:43:014] nam_gic: Parameter not found
+[03-FEB-2014 13:51:43:014] nam_gic: Found 0 items
+[03-FEB-2014 13:51:43:014] nam_gic: exit
+[03-FEB-2014 13:51:43:014] nau_gslf: Using default value "all available adapters"
+[03-FEB-2014 13:51:43:014] nauss_set_state: entry
+[03-FEB-2014 13:51:43:014] nauss_set_state: exit
+[03-FEB-2014 13:51:43:014] nau_gslf: exit
+[03-FEB-2014 13:51:43:014] nau_gparams: exit
+[03-FEB-2014 13:51:43:014] nau_gin: exit
+[03-FEB-2014 13:51:43:014] nagblini: exit
+[03-FEB-2014 13:51:43:017] nigini: entry
+[03-FEB-2014 13:51:43:017] nigini: Count in the NL global area is now 3
+[03-FEB-2014 13:51:43:017] nigini: Count in NI gbl area now: 1
+[03-FEB-2014 13:51:43:017] nrigbi: entry
+[03-FEB-2014 13:51:43:017] nrigbni: entry
+[03-FEB-2014 13:51:43:017] nrigbni: Unable to get data from navigation file tnsnav.ora
+[03-FEB-2014 13:51:43:017] nrigbni: exit
+[03-FEB-2014 13:51:43:017] nrigbi: exit
+[03-FEB-2014 13:51:43:017] nigini: exit
+[03-FEB-2014 13:51:43:017] niqname: Hst is already an NVstring.
+[03-FEB-2014 13:51:43:017] niqname: Inserting CID.
+[03-FEB-2014 13:51:43:017] nigtrm: Count in the NI global area is now 1
+[03-FEB-2014 13:51:43:017] nigtrm: Count in the NL global area is now 3
+[03-FEB-2014 13:51:43:018] nigini: entry
+[03-FEB-2014 13:51:43:018] nigini: Count in the NL global area is now 4
+[03-FEB-2014 13:51:43:018] nigini: Count in NI gbl area now: 2
+[03-FEB-2014 13:51:43:018] nigini: exit
+[03-FEB-2014 13:51:43:018] niqname: Hst is already an NVstring.
+[03-FEB-2014 13:51:43:018] niqname: Inserting CID.
+[03-FEB-2014 13:51:43:018] nigtrm: Count in the NI global area is now 1
+[03-FEB-2014 13:51:43:018] nigtrm: Count in the NL global area is now 3
+[03-FEB-2014 13:51:43:018] nigini: entry
+[03-FEB-2014 13:51:43:018] nigini: Count in the NL global area is now 4
+[03-FEB-2014 13:51:43:018] nigini: Count in NI gbl area now: 2
+[03-FEB-2014 13:51:43:018] nigini: exit
+[03-FEB-2014 13:51:43:018] niqname: Hst is already an NVstring.
+[03-FEB-2014 13:51:43:018] niotns: entry
+[03-FEB-2014 13:51:43:018] snsgblini: exit
+[03-FEB-2014 13:51:43:018] nsevsig: event signal handling now initialised
+[03-FEB-2014 13:51:43:018] niotns: Enabling CTO, value=60000 (milliseconds)
+[03-FEB-2014 13:51:43:018] niotns: Enabling dead connection detection (1 min)
+[03-FEB-2014 13:51:43:018] niotns:  listener bequeathed shadow coming to life...
+[03-FEB-2014 13:51:43:018] nsc2addr: (ADDRESS=(PROTOCOL=beq))
+[03-FEB-2014 13:51:43:018] nlpcaini: entry
+[03-FEB-2014 13:51:43:018] nlpcaini: No process parameters set
+[03-FEB-2014 13:51:43:018] nlpcaini: exit
+[03-FEB-2014 13:51:43:018] nsinherit: connecting...
+[03-FEB-2014 13:51:43:018] ntpcon: entry
+[03-FEB-2014 13:51:43:018] ntpcon: toc = 4
+[03-FEB-2014 13:51:43:018] ntpcon: NT layer IPC connection has been established.
+[03-FEB-2014 13:51:43:018] ntpcon: exit
+[03-FEB-2014 13:51:43:018] nsinherit: doing connect handshake...
+[03-FEB-2014 13:51:43:018] ntprd: entry
+[03-FEB-2014 13:51:43:024] ntprd: exit
+[03-FEB-2014 13:51:43:024] ntprd: entry
+[03-FEB-2014 13:51:43:024] ntprd: exit
+[03-FEB-2014 13:51:43:024] ntprd: entry
+[03-FEB-2014 13:51:43:024] ntprd: exit
+[03-FEB-2014 13:51:43:024] nsinh_hoff: bufl=1025
+[03-FEB-2014 13:51:43:024] nsmal: 1528 bytes at 0x10863cc0
+[03-FEB-2014 13:51:43:024] nsmal: 2760 bytes at 0x108642c0
+[03-FEB-2014 13:51:43:024] nsmal: 168 bytes at 0x10864f90
+[03-FEB-2014 13:51:43:024] nsopen: opening transport...
+[03-FEB-2014 13:51:43:024] nttcon: entry
+[03-FEB-2014 13:51:43:024] nttcon: toc = 6
+[03-FEB-2014 13:51:43:024] nttcnp: entry
+[03-FEB-2014 13:51:43:024] nttcnp: exit
+[03-FEB-2014 13:51:43:024] nttcon: exit
+[03-FEB-2014 13:51:43:024] nsopen: transport is open
+[03-FEB-2014 13:51:43:024] nsoptions: lcl[0]=0x0, lcl[1]=0x0, gbl[0]=0x0, gbl[1]=0x0, cha=0x0
+[03-FEB-2014 13:51:43:024] nsoptions: lcl[0]=0xf4ffe9ff, lcl[1]=0x0, gbl[0]=0x7ebf, gbl[1]=0x0
+[03-FEB-2014 13:51:43:024] nsopen: lcl[0]=0xf4ffe9ff, lcl[1]=0x0, gbl[0]=0x7ebf, gbl[1]=0x0, tdu=65535, sdu=8192
+[03-FEB-2014 13:51:43:024] nsvntx_dei: entry
+[03-FEB-2014 13:51:43:024] nsvntx_dei: exit
+[03-FEB-2014 13:51:43:024] nsmfr: 2760 bytes at 0x108642c0
+[03-FEB-2014 13:51:43:024] nsmfr: 1528 bytes at 0x10863cc0
+[03-FEB-2014 13:51:43:024] nsinh_hoff: hoff=0
+[03-FEB-2014 13:51:43:024] ntpwr: entry
+[03-FEB-2014 13:51:43:024] ntpwr: exit
+[03-FEB-2014 13:51:43:024] nsinh_hoff: handshake is complete
+[03-FEB-2014 13:51:43:024] nsinh_hoff: ADR="(ADDRESS=(PROTOCOL=tcp)(DEV=18)(HOST=192.168.1.51)(PORT=1521))"
+[03-FEB-2014 13:51:43:024] nsc2addr: (ADDRESS=(PROTOCOL=tcp)(DEV=18)(HOST=192.168.1.51)(PORT=1521))
+[03-FEB-2014 13:51:43:024] nttbnd2addr: entry
+[03-FEB-2014 13:51:43:024] snlinGetAddrInfo: entry
+[03-FEB-2014 13:51:43:024] snlinGetAddrInfo: exit
+[03-FEB-2014 13:51:43:024] nttbnd2addr: using host IP address: 192.168.1.51
+[03-FEB-2014 13:51:43:025] snlinFreeAddrInfo: entry
+[03-FEB-2014 13:51:43:025] snlinFreeAddrInfo: exit
+[03-FEB-2014 13:51:43:025] nttbnd2addr: exit
+[03-FEB-2014 13:51:43:025] nsinh_hoff: inheriting the connection...
+[03-FEB-2014 13:51:43:025] nsmal: 1528 bytes at 0x10863cc0
+[03-FEB-2014 13:51:43:025] nsmal: 2760 bytes at 0x108642c0
+[03-FEB-2014 13:51:43:025] nstoSetupTimeout: ATO enabled for ctx=0x0x10863cc0, val=60000(millisecs)
+[03-FEB-2014 13:51:43:025] nstoUpdateActive: Active timeout is 0 (see nstotyp)
+[03-FEB-2014 13:51:43:025] nsopen: opening transport...
+[03-FEB-2014 13:51:43:025] nttcon: entry
+[03-FEB-2014 13:51:43:025] nttcon: toc = 4
+[03-FEB-2014 13:51:43:025] nttcnp: entry
+[03-FEB-2014 13:51:43:025] nttcnp: getting sockname
+[03-FEB-2014 13:51:43:025] nttcnp: getting peername
+[03-FEB-2014 13:51:43:025] nttcnp: exit
+[03-FEB-2014 13:51:43:025] nttcon: set TCP_NODELAY on 18
+[03-FEB-2014 13:51:43:025] nttcon: exit
+[03-FEB-2014 13:51:43:025] nsopen: transport is open
+[03-FEB-2014 13:51:43:025] nsoptions: lcl[0]=0x0, lcl[1]=0x10000000, gbl[0]=0x0, gbl[1]=0x41, cha=0x0
+[03-FEB-2014 13:51:43:025] nsoptions: lcl[0]=0xf4ffe9ff, lcl[1]=0x10000000, gbl[0]=0x7eff, gbl[1]=0x41
+[03-FEB-2014 13:51:43:025] nstoArmAlarmATO: ATO enabled for ctx=0x0x10863cc0, val=60000(millisecs)
+[03-FEB-2014 13:51:43:025] nsnainit: inherit
+[03-FEB-2014 13:51:43:025] nainit: entry
+[03-FEB-2014 13:51:43:025] nagblini: entry
+[03-FEB-2014 13:51:43:025] nagblini: exit
+[03-FEB-2014 13:51:43:025] na_saveprot: entry
+[03-FEB-2014 13:51:43:025] na_saveprot: exit
+[03-FEB-2014 13:51:43:025] nacomin: entry
+[03-FEB-2014 13:51:43:025] nas_init: entry
+[03-FEB-2014 13:51:43:025] nas_init: exit
+[03-FEB-2014 13:51:43:025] nau_ini: entry
+[03-FEB-2014 13:51:43:025] naugcp_get_connect_parameters: entry
+[03-FEB-2014 13:51:43:025] nauss_set_state: entry
+[03-FEB-2014 13:51:43:025] nauss_set_state: exit
+[03-FEB-2014 13:51:43:025] naugcp_get_connect_parameters: exit
+[03-FEB-2014 13:51:43:025] nau_gettab: entry
+[03-FEB-2014 13:51:43:025] nau_gettab: exit
+[03-FEB-2014 13:51:43:025] nau_sini: entry
+[03-FEB-2014 13:51:43:025] nau_sini: exit
+[03-FEB-2014 13:51:43:025] nau_ini: exit
+[03-FEB-2014 13:51:43:025] naeeinit: entry
+[03-FEB-2014 13:51:43:025] nam_gbp: Reading parameter "SQLNET.FIPS_140" from parameter file
+[03-FEB-2014 13:51:43:025] nam_gbp: Parameter not found
+[03-FEB-2014 13:51:43:025] nam_gnsp: Reading parameter "SQLNET.ENCRYPTION_SERVER" from parameter file
+[03-FEB-2014 13:51:43:025] nam_gnsp: Parameter not found
+[03-FEB-2014 13:51:43:025] naequad: Using default value "ACCEPTED"
+[03-FEB-2014 13:51:43:025] nam_gbp: Reading parameter "SQLNET._ENHANCED_LOGON_PROTECTION" from parameter file
+[03-FEB-2014 13:51:43:025] nam_gbp: Parameter not found
+[03-FEB-2014 13:51:43:025] nam_gic: entry
+[03-FEB-2014 13:51:43:025] nam_gic: Counting # of items in "SQLNET.ENCRYPTION_TYPES_SERVER" parameter
+[03-FEB-2014 13:51:43:025] nam_gic: Parameter not found
+[03-FEB-2014 13:51:43:025] nam_gic: exit
+[03-FEB-2014 13:51:43:025] naesno: Using default value "all available algorithms"
+[03-FEB-2014 13:51:43:025] naeshow: entry
+[03-FEB-2014 13:51:43:025] naeshow: exit
+[03-FEB-2014 13:51:43:025] naeeinit: exit
+[03-FEB-2014 13:51:43:025] naecinit: entry
+[03-FEB-2014 13:51:43:025] nam_gnsp: Reading parameter "SQLNET.CRYPTO_CHECKSUM_SERVER" from parameter file
+[03-FEB-2014 13:51:43:025] nam_gnsp: Parameter not found
+[03-FEB-2014 13:51:43:025] naequad: Using default value "ACCEPTED"
+[03-FEB-2014 13:51:43:025] nam_gic: entry
+[03-FEB-2014 13:51:43:025] nam_gic: Counting # of items in "SQLNET.CRYPTO_CHECKSUM_TYPES_SERVER" parameter
+[03-FEB-2014 13:51:43:025] nam_gic: Parameter not found
+[03-FEB-2014 13:51:43:025] nam_gic: exit
+[03-FEB-2014 13:51:43:025] naesno: Using default value "all available algorithms"
+[03-FEB-2014 13:51:43:025] naeshow: entry
+[03-FEB-2014 13:51:43:025] naeshow: exit
+[03-FEB-2014 13:51:43:025] naecinit: exit
+[03-FEB-2014 13:51:43:025] nainit: exit
+[03-FEB-2014 13:51:43:025] nagetctxinfo: entry
+[03-FEB-2014 13:51:43:025] nagetctxinfo: exit
+[03-FEB-2014 13:51:43:025] nsnainit: NS Connection version: 314
+[03-FEB-2014 13:51:43:025] nsnainit: inf->nsinfflg[0]: 0x41 inf->nsinfflg[1]: 0x41
+[03-FEB-2014 13:51:43:025] nsnainit: "or" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+
+[03-FEB-2014 13:51:43:025] nsnainit: "or" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+"and" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+
+[03-FEB-2014 13:51:43:025] nsopen: global context check-in (to slot 0) complete
+[03-FEB-2014 13:51:43:025] nsopen: lcl[0]=0xf4ffe9ff, lcl[1]=0x10000000, gbl[0]=0x7eff, gbl[1]=0x41, tdu=65535, sdu=8192
+[03-FEB-2014 13:51:43:025] nsfull_opn: cid=0, opcode=65, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:025] nsfull_opn: nsctx: state=7, flg=0x4000, mvd=0
+[03-FEB-2014 13:51:43:025] nsmal: 168 bytes at 0x1086a4f0
+[03-FEB-2014 13:51:43:025] nsmal: 168 bytes at 0x1086c5c0
+[03-FEB-2014 13:51:43:025] ntpwr: entry
+[03-FEB-2014 13:51:43:026] ntpwr: exit
+[03-FEB-2014 13:51:43:026] ntpdisc: entry
+[03-FEB-2014 13:51:43:026] ntpdisc: exit
+[03-FEB-2014 13:51:43:026] nsdo: cid=0, opcode=68, *bl=2048, *what=8, uflgs=0x0, cflgs=0x3
+[03-FEB-2014 13:51:43:026] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:026] nsdo: nsctx: state=14, flg=0x4004, mvd=0
+[03-FEB-2014 13:51:43:026] nsdo: gtn=10, gtc=10, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:026] nscon: doing connect handshake...
+[03-FEB-2014 13:51:43:026] nscon: recving a packet
+[03-FEB-2014 13:51:43:026] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:026] nttrd: entry
+[03-FEB-2014 13:51:43:026] nttrd: socket 18 had bytes read=266
+[03-FEB-2014 13:51:43:026] nttrd: exit
+[03-FEB-2014 13:51:43:026] nsprecv: 266 bytes from transport
+[03-FEB-2014 13:51:43:026] nsprecv: tlen=266, plen=266, type=1
+[03-FEB-2014 13:51:43:026] nscon: got NSPTCN packet
+[03-FEB-2014 13:51:43:026] nsconneg: vsn=314, lov=300, opt=0xc41, sdu=8192, tdu=65535, ntc=0x7f08
+[03-FEB-2014 13:51:43:026] nsconneg: vsn=314, gbl=0xc41, sdu=8192, tdu=65535
+[03-FEB-2014 13:51:43:026] nscon: got 208 bytes connect data
+[03-FEB-2014 13:51:43:026] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:026] nsinh_hoff: connection inherited
+[03-FEB-2014 13:51:43:026] nsinherit: connected
+[03-FEB-2014 13:51:43:026] nsdo: cid=0, opcode=67, *bl=0, *what=9, uflgs=0x0, cflgs=0x3
+[03-FEB-2014 13:51:43:026] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:026] nsdo: nsctx: state=2, flg=0x1004004, mvd=0
+[03-FEB-2014 13:51:43:026] nsdo: gtn=266, gtc=266, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:026] nscon: sending NSPTAC packet
+[03-FEB-2014 13:51:43:026] nspsend: plen=32, type=2
+[03-FEB-2014 13:51:43:026] nttwr: entry
+[03-FEB-2014 13:51:43:026] nttwr: socket 18 had bytes written=32
+[03-FEB-2014 13:51:43:026] nttwr: exit
+[03-FEB-2014 13:51:43:026] nspsend: 32 bytes to transport
+[03-FEB-2014 13:51:43:026] nscon: connect handshake is complete
+[03-FEB-2014 13:51:43:026] nscon: nsctxinf[0]=0x41, [1]=0x41
+[03-FEB-2014 13:51:43:026] nstimini: initializing LTM in asynchronous mode
+[03-FEB-2014 13:51:43:026] nstimstart: starting timer at 03-FEB-2014 13:51:43
+[03-FEB-2014 13:51:43:026] nsconbrok: timer created for connection
+[03-FEB-2014 13:51:43:026] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:026] nagetctxinfo: entry
+[03-FEB-2014 13:51:43:026] nagetctxinfo: exit
+[03-FEB-2014 13:51:43:026] nsnainconn: inf->nsinfflg[0]: 0x41 inf->nsinfflg[1]: 0x41
+[03-FEB-2014 13:51:43:026] nsnainconn: "or" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+
+[03-FEB-2014 13:51:43:026] nsnainconn: "or" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+"and" info flags: 0x41	Translations follow:
+	native service(s) is (are) wanted
+
+[03-FEB-2014 13:51:43:026] naconnect: entry
+[03-FEB-2014 13:51:43:027] na_init_connection: entry
+[03-FEB-2014 13:51:43:027] na_info: entry
+[03-FEB-2014 13:51:43:027] nas_version: entry
+[03-FEB-2014 13:51:43:027] nas_version: exit
+[03-FEB-2014 13:51:43:027] nacomsu: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomsu: exit
+[03-FEB-2014 13:51:43:027] nau_info: entry
+[03-FEB-2014 13:51:43:027] nau_info: exit
+[03-FEB-2014 13:51:43:027] nacomsu: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomsu: exit
+[03-FEB-2014 13:51:43:027] nacomsu: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomsu: exit
+[03-FEB-2014 13:51:43:027] nacomsu: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: entry
+[03-FEB-2014 13:51:43:027] nacomfsd: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomsu: exit
+[03-FEB-2014 13:51:43:027] na_info: exit
+[03-FEB-2014 13:51:43:027] na_init_connection: exit
+[03-FEB-2014 13:51:43:027] na_server: entry
+[03-FEB-2014 13:51:43:027] na_receive_packet: entry
+[03-FEB-2014 13:51:43:027] nacomrc: entry
+[03-FEB-2014 13:51:43:027] nsnareceive: buffer address: 0xab38deb0 bytes wanted: 2048
+[03-FEB-2014 13:51:43:027] nsnareceive: calling NS to receive 2048 bytes into address 0xab38deb0
+[03-FEB-2014 13:51:43:027] nsdo: cid=0, opcode=68, *bl=2048, *what=0, uflgs=0x0, cflgs=0x3
+[03-FEB-2014 13:51:43:027] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:027] nsdo: nsctx: state=8, flg=0x102400c, mvd=0
+[03-FEB-2014 13:51:43:027] nsdo: gtn=266, gtc=266, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:027] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:027] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:027] nttrd: entry
+[03-FEB-2014 13:51:43:027] nttrd: socket 18 had bytes read=161
+[03-FEB-2014 13:51:43:027] nttrd: exit
+[03-FEB-2014 13:51:43:027] nsprecv: 161 bytes from transport
+[03-FEB-2014 13:51:43:027] nsprecv: tlen=161, plen=161, type=6
+[03-FEB-2014 13:51:43:027] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:027] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:027] nsdo: *what=1, *bl=2048
+[03-FEB-2014 13:51:43:027] nsdo: 151 bytes from NS buffer
+[03-FEB-2014 13:51:43:027] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:027] nsnareceive: received 151 bytes
+[03-FEB-2014 13:51:43:027] nsnareceive: no more data to receive - returning
+[03-FEB-2014 13:51:43:027] nsnareceive: total bytes received: 151
+[03-FEB-2014 13:51:43:027] nacomus: entry
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomus: exit
+[03-FEB-2014 13:51:43:027] nacomus: entry
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomus: exit
+[03-FEB-2014 13:51:43:027] nacomus: entry
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomus: exit
+[03-FEB-2014 13:51:43:027] nacomus: entry
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomdp: entry
+[03-FEB-2014 13:51:43:027] nacomdp: exit
+[03-FEB-2014 13:51:43:027] nacomus: exit
+[03-FEB-2014 13:51:43:027] nacomrc: exit
+[03-FEB-2014 13:51:43:027] na_receive_packet: exit
+[03-FEB-2014 13:51:43:027] na_csrd: entry
+[03-FEB-2014 13:51:43:027] nas_scn: entry
+[03-FEB-2014 13:51:43:027] nacomrp: entry
+[03-FEB-2014 13:51:43:027] nacomrp: exit
+[03-FEB-2014 13:51:43:027] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nas_sval: entry
+[03-FEB-2014 13:51:43:028] nacomra: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nacomra: exit
+[03-FEB-2014 13:51:43:028] nas_svsl: entry
+[03-FEB-2014 13:51:43:028] nas_svsl: exit
+[03-FEB-2014 13:51:43:028] nas_svsl: entry
+[03-FEB-2014 13:51:43:028] nas_svsl: exit
+[03-FEB-2014 13:51:43:028] nacomsu: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: exit
+[03-FEB-2014 13:51:43:028] nacomdp: entry
+[03-FEB-2014 13:51:43:028] nacomdp: exit
+[03-FEB-2014 13:51:43:028] nacomsu: exit
+[03-FEB-2014 13:51:43:028] nacomsa: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: exit
+[03-FEB-2014 13:51:43:028] nacomdp: entry
+[03-FEB-2014 13:51:43:028] nacomdp: exit
+[03-FEB-2014 13:51:43:028] nacomsa: exit
+[03-FEB-2014 13:51:43:028] nas_sval: exit
+[03-FEB-2014 13:51:43:028] nas_gusl: exit
+[03-FEB-2014 13:51:43:028] nas_scn: exit
+[03-FEB-2014 13:51:43:028] nau_scn: entry
+[03-FEB-2014 13:51:43:028] nau_gpl: entry
+[03-FEB-2014 13:51:43:028] nau_csl: entry
+[03-FEB-2014 13:51:43:028] nau_csl: exit
+[03-FEB-2014 13:51:43:028] nau_gpl: exit
+[03-FEB-2014 13:51:43:028] nau_sgci: entry
+[03-FEB-2014 13:51:43:028] nau_rpv: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nau_rpv: exit
+[03-FEB-2014 13:51:43:028] nau_sgl: entry
+[03-FEB-2014 13:51:43:028] nau_srl: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nau_srcs: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nau_srcs: exit
+[03-FEB-2014 13:51:43:028] nau_sras: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nau_sras: exit
+[03-FEB-2014 13:51:43:028] nau_srl: exit
+[03-FEB-2014 13:51:43:028] nacomsu: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: exit
+[03-FEB-2014 13:51:43:028] nacomdp: entry
+[03-FEB-2014 13:51:43:028] nacomdp: exit
+[03-FEB-2014 13:51:43:028] nacomsu: exit
+[03-FEB-2014 13:51:43:028] nau_sgl: exit
+[03-FEB-2014 13:51:43:028] nau_sgci: exit
+[03-FEB-2014 13:51:43:028] nau_scn: exit
+[03-FEB-2014 13:51:43:028] naeesn: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] naeshow: entry
+[03-FEB-2014 13:51:43:028] naeshow: exit
+[03-FEB-2014 13:51:43:028] nacomsu: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: exit
+[03-FEB-2014 13:51:43:028] nacomdp: entry
+[03-FEB-2014 13:51:43:028] nacomdp: exit
+[03-FEB-2014 13:51:43:028] nacomsu: exit
+[03-FEB-2014 13:51:43:028] naeesn: exit
+[03-FEB-2014 13:51:43:028] naecsn: entry
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] nacomrp: entry
+[03-FEB-2014 13:51:43:028] nacomrp: exit
+[03-FEB-2014 13:51:43:028] naeshow: entry
+[03-FEB-2014 13:51:43:028] naeshow: exit
+[03-FEB-2014 13:51:43:028] nacomsu: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: entry
+[03-FEB-2014 13:51:43:028] nacomfsd: exit
+[03-FEB-2014 13:51:43:028] nacomdp: entry
+[03-FEB-2014 13:51:43:028] nacomdp: exit
+[03-FEB-2014 13:51:43:028] nacomsu: exit
+[03-FEB-2014 13:51:43:028] naecsn: exit
+[03-FEB-2014 13:51:43:028] na_csrd: exit
+[03-FEB-2014 13:51:43:028] nacomsn: entry
+[03-FEB-2014 13:51:43:028] nacomap: entry
+[03-FEB-2014 13:51:43:028] nacomps: entry
+[03-FEB-2014 13:51:43:028] nacomps: exit
+[03-FEB-2014 13:51:43:028] nacomap: exit
+[03-FEB-2014 13:51:43:028] nsnasend: bytes to send: 117
+[03-FEB-2014 13:51:43:028] nsdo: cid=0, opcode=67, *bl=117, *what=1, uflgs=0x22, cflgs=0x3
+[03-FEB-2014 13:51:43:028] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:028] nsdo: nsctx: state=8, flg=0x102400c, mvd=0
+[03-FEB-2014 13:51:43:028] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:028] nsdo: 117 bytes to NS buffer
+[03-FEB-2014 13:51:43:028] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:028] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:028] nspsend: plen=127, type=6
+[03-FEB-2014 13:51:43:028] nttwr: entry
+[03-FEB-2014 13:51:43:028] nttwr: socket 18 had bytes written=127
+[03-FEB-2014 13:51:43:028] nttwr: exit
+[03-FEB-2014 13:51:43:028] nspsend: 127 bytes to transport
+[03-FEB-2014 13:51:43:028] nsdoacts: flushing transport
+[03-FEB-2014 13:51:43:028] nttctl: entry
+[03-FEB-2014 13:51:43:028] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:029] nacompd: entry
+[03-FEB-2014 13:51:43:029] nacompd: exit
+[03-FEB-2014 13:51:43:029] nacomsn: exit
+[03-FEB-2014 13:51:43:029] na_server: exit
+[03-FEB-2014 13:51:43:029] na_coco: entry
+[03-FEB-2014 13:51:43:029] nau_cco: entry
+[03-FEB-2014 13:51:43:029] nau_dis: entry
+[03-FEB-2014 13:51:43:029] nau_dis: exit
+[03-FEB-2014 13:51:43:029] nau_cco: exit
+[03-FEB-2014 13:51:43:029] naeecom: entry
+[03-FEB-2014 13:51:43:029] naeecom: exit
+[03-FEB-2014 13:51:43:029] naeccom: entry
+[03-FEB-2014 13:51:43:029] naeccom: exit
+[03-FEB-2014 13:51:43:029] na_tns: entry
+[03-FEB-2014 13:51:43:029] na_tns: Secure Network Services is available.
+[03-FEB-2014 13:51:43:029] nau_adi: entry
+[03-FEB-2014 13:51:43:029] nau_adi: exit
+[03-FEB-2014 13:51:43:029] na_tns: 	authentication is not active
+[03-FEB-2014 13:51:43:029] na_tns: 	encryption is not active
+[03-FEB-2014 13:51:43:030] na_tns: 	crypto-checksumming is not active
+[03-FEB-2014 13:51:43:030] na_tns: exit
+[03-FEB-2014 13:51:43:030] na_coco: exit
+[03-FEB-2014 13:51:43:030] naconnect: exit
+[03-FEB-2014 13:51:43:030] nagetctxinfo: entry
+[03-FEB-2014 13:51:43:030] nagetctxinfo: exit
+[03-FEB-2014 13:51:43:030] niotns: Broken-connection function has been set.
+[03-FEB-2014 13:51:43:030] nsevreg: begin registration process for 0
+[03-FEB-2014 13:51:43:030] nsevreg: sgt=3, evn=2, evt[2]=0x0
+[03-FEB-2014 13:51:43:030] nsevreg: begin notification process for 0
+[03-FEB-2014 13:51:43:030] nsevregAffectNotif: installing signal (3) handler
+[03-FEB-2014 13:51:43:030] nsevreg: rdm=0, sgt=3, evt[0]=0x4, [1]=0x0, [2]=0x0, nrg=0
+[03-FEB-2014 13:51:43:030] nsevreg: registering for 0x4
+[03-FEB-2014 13:51:43:030] niotns: niotns: passing ns handle back up...
+[03-FEB-2014 13:51:43:030] niotns: exit
+[03-FEB-2014 13:51:43:030] nscontrol: cmd=4, lcl=0x0
+[03-FEB-2014 13:51:43:030] nsba_register: entry
+[03-FEB-2014 13:51:43:030] nabagmn: entry
+[03-FEB-2014 13:51:43:030] nabagmn: exit
+[03-FEB-2014 13:51:43:030] naba_register: entry
+[03-FEB-2014 13:51:43:030] nau_info: entry
+[03-FEB-2014 13:51:43:030] nau_info: exit
+[03-FEB-2014 13:51:43:030] naba_register: exit
+[03-FEB-2014 13:51:43:030] nsba_register: exit
+[03-FEB-2014 13:51:43:030] nsgetclientaddress: entry
+[03-FEB-2014 13:51:43:030] nttaddr2bnd: entry
+[03-FEB-2014 13:51:43:030] snlinGetNameInfo: entry
+[03-FEB-2014 13:51:43:030] snlinGetNameInfo: exit
+[03-FEB-2014 13:51:43:030] nttaddr2bnd: exit
+[03-FEB-2014 13:51:43:030] nsgetclientaddress: exit
+[03-FEB-2014 13:51:43:030] nszgclient: entry
+[03-FEB-2014 13:51:43:030] nszgclient: exit
+[03-FEB-2014 13:51:43:030] nszgetuser: entry
+[03-FEB-2014 13:51:43:030] nszgetuser: exit
+[03-FEB-2014 13:51:43:030] nsznamefree: entry
+[03-FEB-2014 13:51:43:030] nsznamefree: exit
+[03-FEB-2014 13:51:43:030] nsznamefree: entry
+[03-FEB-2014 13:51:43:030] nsznamefree: exit
+[03-FEB-2014 13:51:43:030] nioqrc: entry
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:030] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:030] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:030] nttrd: entry
+[03-FEB-2014 13:51:43:030] nttrd: socket 18 had bytes read=38
+[03-FEB-2014 13:51:43:030] nttrd: exit
+[03-FEB-2014 13:51:43:030] nsprecv: 38 bytes from transport
+[03-FEB-2014 13:51:43:030] nsprecv: tlen=38, plen=38, type=6
+[03-FEB-2014 13:51:43:030] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:030] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:030] nioqrc: exit
+[03-FEB-2014 13:51:43:030] nioctl: entry
+[03-FEB-2014 13:51:43:030] nscontrol: Vect I/O support: 1[03-FEB-2014 13:51:43:030] nscontrol: cmd=44, lcl=0x0
+[03-FEB-2014 13:51:43:030] nioctl: exit
+[03-FEB-2014 13:51:43:030] nioqrc: entry
+[03-FEB-2014 13:51:43:030] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:030] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:030] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:030] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:030] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:030] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:030] nspsend: plen=238, type=6
+[03-FEB-2014 13:51:43:030] nttwr: entry
+[03-FEB-2014 13:51:43:030] nttwr: socket 18 had bytes written=238
+[03-FEB-2014 13:51:43:030] nttwr: exit
+[03-FEB-2014 13:51:43:030] nspsend: 238 bytes to transport
+[03-FEB-2014 13:51:43:030] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:030] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:031] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:031] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:031] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:031] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:031] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:031] nttrd: entry
+[03-FEB-2014 13:51:43:031] nttrd: socket 18 had bytes read=81
+[03-FEB-2014 13:51:43:031] nttrd: exit
+[03-FEB-2014 13:51:43:031] nsprecv: 81 bytes from transport
+[03-FEB-2014 13:51:43:031] nsprecv: tlen=81, plen=81, type=6
+[03-FEB-2014 13:51:43:031] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:031] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:031] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:031] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:031] nioqrc: exit
+[03-FEB-2014 13:51:43:031] nioctl: entry
+[03-FEB-2014 13:51:43:031] nscontrol: Vect I/O support: 1[03-FEB-2014 13:51:43:031] nscontrol: cmd=44, lcl=0x0
+[03-FEB-2014 13:51:43:031] nioctl: exit
+[03-FEB-2014 13:51:43:031] nioqsn: entry
+[03-FEB-2014 13:51:43:031] nioqsn: exit
+[03-FEB-2014 13:51:43:032] nioqrc: entry
+[03-FEB-2014 13:51:43:032] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:032] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:032] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:032] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:032] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:032] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:032] nspsend: plen=26, type=6
+[03-FEB-2014 13:51:43:032] nttwr: entry
+[03-FEB-2014 13:51:43:032] nttwr: socket 18 had bytes written=26
+[03-FEB-2014 13:51:43:032] nttwr: exit
+[03-FEB-2014 13:51:43:032] nspsend: 26 bytes to transport
+[03-FEB-2014 13:51:43:032] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:032] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:032] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:032] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:032] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:032] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:032] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:032] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:032] nttrd: entry
+[03-FEB-2014 13:51:43:033] nttrd: socket 18 had bytes read=244
+[03-FEB-2014 13:51:43:033] nttrd: exit
+[03-FEB-2014 13:51:43:033] nsprecv: 244 bytes from transport
+[03-FEB-2014 13:51:43:033] nsprecv: tlen=244, plen=244, type=6
+[03-FEB-2014 13:51:43:033] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:033] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:033] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:033] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:033] nioqrc: exit
+[03-FEB-2014 13:51:43:034] nszgclv: entry
+[03-FEB-2014 13:51:43:034] nszgclv: SQLNET.ALLOWED_LOGON_VERSION not found, using default.
+[03-FEB-2014 13:51:43:034] nszgclv: exit
+[03-FEB-2014 13:51:43:035] nszgclv: entry
+[03-FEB-2014 13:51:43:035] nszgclv: SQLNET.ALLOWED_LOGON_VERSION not found, using default.
+[03-FEB-2014 13:51:43:035] nszgclv: exit
+[03-FEB-2014 13:51:43:035] nioqsn: entry
+[03-FEB-2014 13:51:43:035] nioqsn: exit
+[03-FEB-2014 13:51:43:035] nioqrc: entry
+[03-FEB-2014 13:51:43:035] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:035] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:035] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:035] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:035] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:035] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:035] nspsend: plen=337, type=6
+[03-FEB-2014 13:51:43:035] nttwr: entry
+[03-FEB-2014 13:51:43:035] nttwr: socket 18 had bytes written=337
+[03-FEB-2014 13:51:43:035] nttwr: exit
+[03-FEB-2014 13:51:43:035] nspsend: 337 bytes to transport
+[03-FEB-2014 13:51:43:035] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:035] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:035] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:035] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:035] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:035] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:035] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:035] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:035] nttrd: entry
+[03-FEB-2014 13:51:43:036] nttrd: socket 18 had bytes read=881
+[03-FEB-2014 13:51:43:036] nttrd: exit
+[03-FEB-2014 13:51:43:036] nsprecv: 881 bytes from transport
+[03-FEB-2014 13:51:43:036] nsprecv: tlen=881, plen=881, type=6
+[03-FEB-2014 13:51:43:036] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:036] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:036] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:036] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:036] nioqrc: exit
+[03-FEB-2014 13:51:43:036] nszgclv: entry
+[03-FEB-2014 13:51:43:036] nszgclv: SQLNET.ALLOWED_LOGON_VERSION not found, using default.
+[03-FEB-2014 13:51:43:037] nszgclv: exit
+[03-FEB-2014 13:51:43:040] nsba_get_list: entry
+[03-FEB-2014 13:51:43:040] nsba_get_list: exit
+[03-FEB-2014 13:51:43:040] nstoClearTimeout: ATO disabled for ctx=0x0x10863cc0
+[03-FEB-2014 13:51:43:040] nstoUpdateActive: Active timeout is -1 (see nstotyp)
+[03-FEB-2014 13:51:43:040] nstoControlATO: ATO disabled for ctx=0x0x10863cc0
+[03-FEB-2014 13:51:43:040] nscontrol: cmd=24, lcl=0x0
+[03-FEB-2014 13:51:43:040] nszssk: entry
+[03-FEB-2014 13:51:43:040] nassky: entry
+[03-FEB-2014 13:51:43:040] nassky: exit
+[03-FEB-2014 13:51:43:040] nszssk: exit
+[03-FEB-2014 13:51:43:042] nioqsn: entry
+[03-FEB-2014 13:51:43:042] nioqsn: exit
+[03-FEB-2014 13:51:43:042] nioqrc: entry
+[03-FEB-2014 13:51:43:042] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:042] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:042] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:042] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:042] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:042] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:042] nspsend: plen=1800, type=6
+[03-FEB-2014 13:51:43:042] nttwr: entry
+[03-FEB-2014 13:51:43:043] nttwr: socket 18 had bytes written=1800
+[03-FEB-2014 13:51:43:043] nttwr: exit
+[03-FEB-2014 13:51:43:043] nspsend: 1800 bytes to transport
+[03-FEB-2014 13:51:43:043] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:043] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:043] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:043] nttrd: entry
+[03-FEB-2014 13:51:43:043] nttrd: socket 18 had bytes read=60
+[03-FEB-2014 13:51:43:043] nttrd: exit
+[03-FEB-2014 13:51:43:043] nsprecv: 60 bytes from transport
+[03-FEB-2014 13:51:43:043] nsprecv: tlen=60, plen=60, type=6
+[03-FEB-2014 13:51:43:043] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:043] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:043] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:043] nioqrc: exit
+[03-FEB-2014 13:51:43:043] nioqsn: entry
+[03-FEB-2014 13:51:43:043] nioqsn: exit
+[03-FEB-2014 13:51:43:043] nioqrc: entry
+[03-FEB-2014 13:51:43:043] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:043] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:043] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:043] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:043] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:043] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:043] nspsend: plen=236, type=6
+[03-FEB-2014 13:51:43:043] nttwr: entry
+[03-FEB-2014 13:51:43:043] nttwr: socket 18 had bytes written=236
+[03-FEB-2014 13:51:43:043] nttwr: exit
+[03-FEB-2014 13:51:43:043] nspsend: 236 bytes to transport
+[03-FEB-2014 13:51:43:044] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:044] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:044] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:044] nttrd: entry
+[03-FEB-2014 13:51:43:044] nttrd: socket 18 had bytes read=280
+[03-FEB-2014 13:51:43:044] nttrd: exit
+[03-FEB-2014 13:51:43:044] nsprecv: 280 bytes from transport
+[03-FEB-2014 13:51:43:044] nsprecv: tlen=280, plen=280, type=6
+[03-FEB-2014 13:51:43:044] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:044] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:044] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:044] nioqrc: exit
+[03-FEB-2014 13:51:43:045] nioqsn: entry
+[03-FEB-2014 13:51:43:045] nioqsn: exit
+[03-FEB-2014 13:51:43:046] nioqrc: entry
+[03-FEB-2014 13:51:43:046] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:046] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:046] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:046] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:046] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:046] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:046] nspsend: plen=397, type=6
+[03-FEB-2014 13:51:43:046] nttwr: entry
+[03-FEB-2014 13:51:43:046] nttwr: socket 18 had bytes written=397
+[03-FEB-2014 13:51:43:046] nttwr: exit
+[03-FEB-2014 13:51:43:046] nspsend: 397 bytes to transport
+[03-FEB-2014 13:51:43:046] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:046] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:046] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:046] nttrd: entry
+[03-FEB-2014 13:51:43:046] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:046] nttrd: exit
+[03-FEB-2014 13:51:43:046] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:046] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:046] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:046] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:046] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:046] nioqrc: exit
+[03-FEB-2014 13:51:43:046] nioqsn: entry
+[03-FEB-2014 13:51:43:046] nioqsn: exit
+[03-FEB-2014 13:51:43:046] nioqrc: entry
+[03-FEB-2014 13:51:43:046] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:047] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:047] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:047] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:047] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:047] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:047] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:047] nttwr: entry
+[03-FEB-2014 13:51:43:047] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:047] nttwr: exit
+[03-FEB-2014 13:51:43:047] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:047] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:047] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:047] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:047] nttrd: entry
+[03-FEB-2014 13:51:43:047] nttrd: socket 18 had bytes read=312
+[03-FEB-2014 13:51:43:047] nttrd: exit
+[03-FEB-2014 13:51:43:047] nsprecv: 312 bytes from transport
+[03-FEB-2014 13:51:43:047] nsprecv: tlen=312, plen=312, type=6
+[03-FEB-2014 13:51:43:047] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:047] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:047] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:047] nioqrc: exit
+[03-FEB-2014 13:51:43:048] nioqsn: entry
+[03-FEB-2014 13:51:43:048] nioqsn: exit
+[03-FEB-2014 13:51:43:048] nioqrc: entry
+[03-FEB-2014 13:51:43:048] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:048] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:048] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:048] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:048] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:048] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:048] nspsend: plen=181, type=6
+[03-FEB-2014 13:51:43:048] nttwr: entry
+[03-FEB-2014 13:51:43:048] nttwr: socket 18 had bytes written=181
+[03-FEB-2014 13:51:43:048] nttwr: exit
+[03-FEB-2014 13:51:43:048] nspsend: 181 bytes to transport
+[03-FEB-2014 13:51:43:048] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:048] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:048] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:048] nttrd: entry
+[03-FEB-2014 13:51:43:048] nttrd: socket 18 had bytes read=439
+[03-FEB-2014 13:51:43:048] nttrd: exit
+[03-FEB-2014 13:51:43:048] nsprecv: 439 bytes from transport
+[03-FEB-2014 13:51:43:048] nsprecv: tlen=439, plen=439, type=6
+[03-FEB-2014 13:51:43:048] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:048] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:048] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:048] nioqrc: exit
+[03-FEB-2014 13:51:43:050] nioqsn: entry
+[03-FEB-2014 13:51:43:050] nioqsn: exit
+[03-FEB-2014 13:51:43:050] nioqrc: entry
+[03-FEB-2014 13:51:43:051] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:051] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:051] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:051] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:051] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:051] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:051] nspsend: plen=633, type=6
+[03-FEB-2014 13:51:43:051] nttwr: entry
+[03-FEB-2014 13:51:43:051] nttwr: socket 18 had bytes written=633
+[03-FEB-2014 13:51:43:051] nttwr: exit
+[03-FEB-2014 13:51:43:051] nspsend: 633 bytes to transport
+[03-FEB-2014 13:51:43:051] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:051] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:051] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:051] nttrd: entry
+[03-FEB-2014 13:51:43:051] nttrd: socket 18 had bytes read=462
+[03-FEB-2014 13:51:43:051] nttrd: exit
+[03-FEB-2014 13:51:43:051] nsprecv: 462 bytes from transport
+[03-FEB-2014 13:51:43:051] nsprecv: tlen=462, plen=462, type=6
+[03-FEB-2014 13:51:43:051] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:051] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:051] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:051] nioqrc: exit
+[03-FEB-2014 13:51:43:052] nioqsn: entry
+[03-FEB-2014 13:51:43:052] nioqsn: exit
+[03-FEB-2014 13:51:43:052] nioqrc: entry
+[03-FEB-2014 13:51:43:052] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:052] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:052] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:052] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:052] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:052] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:052] nspsend: plen=348, type=6
+[03-FEB-2014 13:51:43:052] nttwr: entry
+[03-FEB-2014 13:51:43:052] nttwr: socket 18 had bytes written=348
+[03-FEB-2014 13:51:43:052] nttwr: exit
+[03-FEB-2014 13:51:43:052] nspsend: 348 bytes to transport
+[03-FEB-2014 13:51:43:052] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:052] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:052] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:052] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:052] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:052] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:052] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:052] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:052] nttrd: entry
+[03-FEB-2014 13:51:43:053] nttrd: socket 18 had bytes read=386
+[03-FEB-2014 13:51:43:053] nttrd: exit
+[03-FEB-2014 13:51:43:053] nsprecv: 386 bytes from transport
+[03-FEB-2014 13:51:43:053] nsprecv: tlen=386, plen=386, type=6
+[03-FEB-2014 13:51:43:053] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:053] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:053] nioqrc: exit
+[03-FEB-2014 13:51:43:053] nioqsn: entry
+[03-FEB-2014 13:51:43:053] nioqsn: exit
+[03-FEB-2014 13:51:43:053] nioqrc: entry
+[03-FEB-2014 13:51:43:053] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:053] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:053] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:053] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:053] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:053] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:053] nspsend: plen=232, type=6
+[03-FEB-2014 13:51:43:053] nttwr: entry
+[03-FEB-2014 13:51:43:053] nttwr: socket 18 had bytes written=232
+[03-FEB-2014 13:51:43:053] nttwr: exit
+[03-FEB-2014 13:51:43:053] nspsend: 232 bytes to transport
+[03-FEB-2014 13:51:43:053] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:053] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:053] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:053] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:053] nttrd: entry
+[03-FEB-2014 13:51:43:054] nttrd: socket 18 had bytes read=362
+[03-FEB-2014 13:51:43:054] nttrd: exit
+[03-FEB-2014 13:51:43:054] nsprecv: 362 bytes from transport
+[03-FEB-2014 13:51:43:054] nsprecv: tlen=362, plen=362, type=6
+[03-FEB-2014 13:51:43:054] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:054] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:054] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:054] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:054] nioqrc: exit
+[03-FEB-2014 13:51:43:054] nioqsn: entry
+[03-FEB-2014 13:51:43:054] nioqsn: exit
+[03-FEB-2014 13:51:43:055] nioqrc: entry
+[03-FEB-2014 13:51:43:055] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:055] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:055] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:055] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:055] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:055] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:055] nspsend: plen=414, type=6
+[03-FEB-2014 13:51:43:055] nttwr: entry
+[03-FEB-2014 13:51:43:055] nttwr: socket 18 had bytes written=414
+[03-FEB-2014 13:51:43:055] nttwr: exit
+[03-FEB-2014 13:51:43:055] nspsend: 414 bytes to transport
+[03-FEB-2014 13:51:43:055] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:055] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:055] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:055] nttrd: entry
+[03-FEB-2014 13:51:43:055] nttrd: socket 18 had bytes read=36
+[03-FEB-2014 13:51:43:055] nttrd: exit
+[03-FEB-2014 13:51:43:055] nsprecv: 36 bytes from transport
+[03-FEB-2014 13:51:43:055] nsprecv: tlen=36, plen=36, type=6
+[03-FEB-2014 13:51:43:055] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:055] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:055] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:055] nioqrc: exit
+[03-FEB-2014 13:51:43:055] nioqsn: entry
+[03-FEB-2014 13:51:43:055] nioqsn: exit
+[03-FEB-2014 13:51:43:055] nioqrc: entry
+[03-FEB-2014 13:51:43:055] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:055] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:055] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:055] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:055] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:055] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:055] nspsend: plen=17, type=6
+[03-FEB-2014 13:51:43:056] nttwr: entry
+[03-FEB-2014 13:51:43:056] nttwr: socket 18 had bytes written=17
+[03-FEB-2014 13:51:43:056] nttwr: exit
+[03-FEB-2014 13:51:43:056] nspsend: 17 bytes to transport
+[03-FEB-2014 13:51:43:056] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:056] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:056] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:056] nttrd: entry
+[03-FEB-2014 13:51:43:056] nttrd: socket 18 had bytes read=13
+[03-FEB-2014 13:51:43:056] nttrd: exit
+[03-FEB-2014 13:51:43:056] nsprecv: 13 bytes from transport
+[03-FEB-2014 13:51:43:056] nsprecv: tlen=13, plen=13, type=6
+[03-FEB-2014 13:51:43:056] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:056] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nioqrc: exit
+[03-FEB-2014 13:51:43:056] nioqsn: entry
+[03-FEB-2014 13:51:43:056] nioqsn: exit
+[03-FEB-2014 13:51:43:056] nioqrc: entry
+[03-FEB-2014 13:51:43:056] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:056] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:056] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:056] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:056] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:056] nspsend: plen=17, type=6
+[03-FEB-2014 13:51:43:056] nttwr: entry
+[03-FEB-2014 13:51:43:056] nttwr: socket 18 had bytes written=17
+[03-FEB-2014 13:51:43:056] nttwr: exit
+[03-FEB-2014 13:51:43:056] nspsend: 17 bytes to transport
+[03-FEB-2014 13:51:43:056] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:056] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:056] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:056] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:056] nttrd: entry
+[03-FEB-2014 13:51:43:057] nttrd: socket 18 had bytes read=299
+[03-FEB-2014 13:51:43:057] nttrd: exit
+[03-FEB-2014 13:51:43:057] nsprecv: 299 bytes from transport
+[03-FEB-2014 13:51:43:057] nsprecv: tlen=299, plen=299, type=6
+[03-FEB-2014 13:51:43:057] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:057] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:057] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:057] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:057] nioqrc: exit
+[03-FEB-2014 13:51:43:060] nioqsn: entry
+[03-FEB-2014 13:51:43:060] nioqsn: exit
+[03-FEB-2014 13:51:43:061] nioqrc: entry
+[03-FEB-2014 13:51:43:061] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:061] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:061] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:061] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:061] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:061] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:061] nspsend: plen=387, type=6
+[03-FEB-2014 13:51:43:061] nttwr: entry
+[03-FEB-2014 13:51:43:061] nttwr: socket 18 had bytes written=387
+[03-FEB-2014 13:51:43:061] nttwr: exit
+[03-FEB-2014 13:51:43:061] nspsend: 387 bytes to transport
+[03-FEB-2014 13:51:43:061] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:061] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:061] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:061] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:061] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:061] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:061] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:061] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:061] nttrd: entry
+[03-FEB-2014 13:51:43:061] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:062] nttrd: exit
+[03-FEB-2014 13:51:43:062] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:062] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:062] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:062] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:062] nioqrc: exit
+[03-FEB-2014 13:51:43:062] nioqsn: entry
+[03-FEB-2014 13:51:43:062] nioqsn: exit
+[03-FEB-2014 13:51:43:062] nioqrc: entry
+[03-FEB-2014 13:51:43:062] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:062] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:062] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:062] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:062] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:062] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:062] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:062] nttwr: entry
+[03-FEB-2014 13:51:43:062] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:062] nttwr: exit
+[03-FEB-2014 13:51:43:062] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:062] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:062] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:062] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:062] nttrd: entry
+[03-FEB-2014 13:51:43:062] nttrd: socket 18 had bytes read=323
+[03-FEB-2014 13:51:43:062] nttrd: exit
+[03-FEB-2014 13:51:43:062] nsprecv: 323 bytes from transport
+[03-FEB-2014 13:51:43:062] nsprecv: tlen=323, plen=323, type=6
+[03-FEB-2014 13:51:43:062] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:062] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:062] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:062] nioqrc: exit
+[03-FEB-2014 13:51:43:064] nioqsn: entry
+[03-FEB-2014 13:51:43:064] nioqsn: exit
+[03-FEB-2014 13:51:43:064] nioqrc: entry
+[03-FEB-2014 13:51:43:064] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:064] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:064] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:064] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:064] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:064] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:064] nspsend: plen=374, type=6
+[03-FEB-2014 13:51:43:064] nttwr: entry
+[03-FEB-2014 13:51:43:065] nttwr: socket 18 had bytes written=374
+[03-FEB-2014 13:51:43:065] nttwr: exit
+[03-FEB-2014 13:51:43:065] nspsend: 374 bytes to transport
+[03-FEB-2014 13:51:43:065] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:065] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:065] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:065] nttrd: entry
+[03-FEB-2014 13:51:43:065] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:065] nttrd: exit
+[03-FEB-2014 13:51:43:065] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:065] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:065] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:065] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nioqrc: exit
+[03-FEB-2014 13:51:43:065] nioqsn: entry
+[03-FEB-2014 13:51:43:065] nioqsn: exit
+[03-FEB-2014 13:51:43:065] nioqrc: entry
+[03-FEB-2014 13:51:43:065] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:065] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:065] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:065] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:065] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:065] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:065] nttwr: entry
+[03-FEB-2014 13:51:43:065] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:065] nttwr: exit
+[03-FEB-2014 13:51:43:065] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:065] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:065] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:065] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:065] nttrd: entry
+[03-FEB-2014 13:51:43:065] nttrd: socket 18 had bytes read=315
+[03-FEB-2014 13:51:43:065] nttrd: exit
+[03-FEB-2014 13:51:43:065] nsprecv: 315 bytes from transport
+[03-FEB-2014 13:51:43:065] nsprecv: tlen=315, plen=315, type=6
+[03-FEB-2014 13:51:43:065] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:065] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:065] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:065] nioqrc: exit
+[03-FEB-2014 13:51:43:066] nioqsn: entry
+[03-FEB-2014 13:51:43:066] nioqsn: exit
+[03-FEB-2014 13:51:43:066] nioqrc: entry
+[03-FEB-2014 13:51:43:066] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:066] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:066] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:066] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:066] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:066] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:067] nspsend: plen=376, type=6
+[03-FEB-2014 13:51:43:067] nttwr: entry
+[03-FEB-2014 13:51:43:067] nttwr: socket 18 had bytes written=376
+[03-FEB-2014 13:51:43:067] nttwr: exit
+[03-FEB-2014 13:51:43:067] nspsend: 376 bytes to transport
+[03-FEB-2014 13:51:43:067] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:067] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:067] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:067] nttrd: entry
+[03-FEB-2014 13:51:43:067] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:067] nttrd: exit
+[03-FEB-2014 13:51:43:067] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:067] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:067] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:067] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nioqrc: exit
+[03-FEB-2014 13:51:43:067] nioqsn: entry
+[03-FEB-2014 13:51:43:067] nioqsn: exit
+[03-FEB-2014 13:51:43:067] nioqrc: entry
+[03-FEB-2014 13:51:43:067] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:067] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:067] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:067] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:067] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:067] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:067] nttwr: entry
+[03-FEB-2014 13:51:43:067] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:067] nttwr: exit
+[03-FEB-2014 13:51:43:067] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:067] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:067] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:067] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:067] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:067] nttrd: entry
+[03-FEB-2014 13:51:43:068] nttrd: socket 18 had bytes read=320
+[03-FEB-2014 13:51:43:068] nttrd: exit
+[03-FEB-2014 13:51:43:068] nsprecv: 320 bytes from transport
+[03-FEB-2014 13:51:43:068] nsprecv: tlen=320, plen=320, type=6
+[03-FEB-2014 13:51:43:068] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:068] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:068] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:068] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:068] nioqrc: exit
+[03-FEB-2014 13:51:43:071] nioqsn: entry
+[03-FEB-2014 13:51:43:071] nioqsn: exit
+[03-FEB-2014 13:51:43:071] nioqrc: entry
+[03-FEB-2014 13:51:43:071] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:071] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:071] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:071] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:071] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:071] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:071] nspsend: plen=537, type=6
+[03-FEB-2014 13:51:43:071] nttwr: entry
+[03-FEB-2014 13:51:43:071] nttwr: socket 18 had bytes written=537
+[03-FEB-2014 13:51:43:071] nttwr: exit
+[03-FEB-2014 13:51:43:071] nspsend: 537 bytes to transport
+[03-FEB-2014 13:51:43:071] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:071] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:071] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:071] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:071] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:071] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:071] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:071] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:071] nttrd: entry
+[03-FEB-2014 13:51:43:072] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:072] nttrd: exit
+[03-FEB-2014 13:51:43:072] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:072] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:072] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:072] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:072] nioqrc: exit
+[03-FEB-2014 13:51:43:072] nioqsn: entry
+[03-FEB-2014 13:51:43:072] nioqsn: exit
+[03-FEB-2014 13:51:43:072] nioqrc: entry
+[03-FEB-2014 13:51:43:072] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:072] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:072] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:072] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:072] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:072] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:072] nspsend: plen=336, type=6
+[03-FEB-2014 13:51:43:072] nttwr: entry
+[03-FEB-2014 13:51:43:072] nttwr: socket 18 had bytes written=336
+[03-FEB-2014 13:51:43:072] nttwr: exit
+[03-FEB-2014 13:51:43:072] nspsend: 336 bytes to transport
+[03-FEB-2014 13:51:43:072] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:072] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:072] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:072] nttrd: entry
+[03-FEB-2014 13:51:43:072] nttrd: socket 18 had bytes read=316
+[03-FEB-2014 13:51:43:072] nttrd: exit
+[03-FEB-2014 13:51:43:072] nsprecv: 316 bytes from transport
+[03-FEB-2014 13:51:43:072] nsprecv: tlen=316, plen=316, type=6
+[03-FEB-2014 13:51:43:072] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:072] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:072] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:072] nioqrc: exit
+[03-FEB-2014 13:51:43:073] nioqsn: entry
+[03-FEB-2014 13:51:43:073] nioqsn: exit
+[03-FEB-2014 13:51:43:074] nioqrc: entry
+[03-FEB-2014 13:51:43:074] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:074] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:074] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:074] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:074] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:074] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:074] nspsend: plen=388, type=6
+[03-FEB-2014 13:51:43:074] nttwr: entry
+[03-FEB-2014 13:51:43:074] nttwr: socket 18 had bytes written=388
+[03-FEB-2014 13:51:43:074] nttwr: exit
+[03-FEB-2014 13:51:43:074] nspsend: 388 bytes to transport
+[03-FEB-2014 13:51:43:074] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:074] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:074] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:074] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:074] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:074] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:074] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:074] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:074] nttrd: entry
+[03-FEB-2014 13:51:43:074] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:074] nttrd: exit
+[03-FEB-2014 13:51:43:074] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:074] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:074] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:075] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:075] nioqrc: exit
+[03-FEB-2014 13:51:43:075] nioqsn: entry
+[03-FEB-2014 13:51:43:075] nioqsn: exit
+[03-FEB-2014 13:51:43:075] nioqrc: entry
+[03-FEB-2014 13:51:43:075] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:075] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:075] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:075] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:075] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:075] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:075] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:075] nttwr: entry
+[03-FEB-2014 13:51:43:075] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:075] nttwr: exit
+[03-FEB-2014 13:51:43:075] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:075] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:075] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:075] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:075] nttrd: entry
+[03-FEB-2014 13:51:43:075] nttrd: socket 18 had bytes read=387
+[03-FEB-2014 13:51:43:075] nttrd: exit
+[03-FEB-2014 13:51:43:075] nsprecv: 387 bytes from transport
+[03-FEB-2014 13:51:43:075] nsprecv: tlen=387, plen=387, type=6
+[03-FEB-2014 13:51:43:075] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:075] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:075] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:075] nioqrc: exit
+[03-FEB-2014 13:51:43:077] nioqsn: entry
+[03-FEB-2014 13:51:43:077] nioqsn: exit
+[03-FEB-2014 13:51:43:077] nioqrc: entry
+[03-FEB-2014 13:51:43:077] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:077] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:077] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:077] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:077] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:077] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:077] nspsend: plen=560, type=6
+[03-FEB-2014 13:51:43:077] nttwr: entry
+[03-FEB-2014 13:51:43:077] nttwr: socket 18 had bytes written=560
+[03-FEB-2014 13:51:43:077] nttwr: exit
+[03-FEB-2014 13:51:43:077] nspsend: 560 bytes to transport
+[03-FEB-2014 13:51:43:077] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:077] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:077] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:078] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:078] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:078] nttrd: entry
+[03-FEB-2014 13:51:43:078] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:078] nttrd: exit
+[03-FEB-2014 13:51:43:078] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:078] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:078] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:078] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:078] nioqrc: exit
+[03-FEB-2014 13:51:43:078] nioqsn: entry
+[03-FEB-2014 13:51:43:078] nioqsn: exit
+[03-FEB-2014 13:51:43:078] nioqrc: entry
+[03-FEB-2014 13:51:43:078] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:078] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:078] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:078] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:078] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:078] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:078] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:078] nttwr: entry
+[03-FEB-2014 13:51:43:078] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:078] nttwr: exit
+[03-FEB-2014 13:51:43:078] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:078] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:078] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:078] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:078] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:078] nttrd: entry
+[03-FEB-2014 13:51:43:078] nttrd: socket 18 had bytes read=1659
+[03-FEB-2014 13:51:43:078] nttrd: exit
+[03-FEB-2014 13:51:43:078] nsprecv: 1659 bytes from transport
+[03-FEB-2014 13:51:43:079] nsprecv: tlen=1659, plen=1659, type=6
+[03-FEB-2014 13:51:43:079] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:079] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:079] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:079] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:079] nioqrc: exit
+[03-FEB-2014 13:51:43:084] nioqsn: entry
+[03-FEB-2014 13:51:43:084] nioqsn: exit
+[03-FEB-2014 13:51:43:084] nioqrc: entry
+[03-FEB-2014 13:51:43:084] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:084] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:084] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:084] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:084] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:084] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:084] nspsend: plen=296, type=6
+[03-FEB-2014 13:51:43:084] nttwr: entry
+[03-FEB-2014 13:51:43:084] nttwr: socket 18 had bytes written=296
+[03-FEB-2014 13:51:43:084] nttwr: exit
+[03-FEB-2014 13:51:43:084] nspsend: 296 bytes to transport
+[03-FEB-2014 13:51:43:084] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:084] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:084] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:084] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:084] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:084] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:085] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:085] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:085] nttrd: entry
+[03-FEB-2014 13:51:43:085] nttrd: socket 18 had bytes read=378
+[03-FEB-2014 13:51:43:085] nttrd: exit
+[03-FEB-2014 13:51:43:085] nsprecv: 378 bytes from transport
+[03-FEB-2014 13:51:43:085] nsprecv: tlen=378, plen=378, type=6
+[03-FEB-2014 13:51:43:085] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:085] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:085] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:085] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:085] nioqrc: exit
+[03-FEB-2014 13:51:43:086] nioqsn: entry
+[03-FEB-2014 13:51:43:086] nioqsn: exit
+[03-FEB-2014 13:51:43:086] nioqrc: entry
+[03-FEB-2014 13:51:43:086] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:086] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:086] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:086] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:086] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:086] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:086] nspsend: plen=389, type=6
+[03-FEB-2014 13:51:43:086] nttwr: entry
+[03-FEB-2014 13:51:43:086] nttwr: socket 18 had bytes written=389
+[03-FEB-2014 13:51:43:086] nttwr: exit
+[03-FEB-2014 13:51:43:086] nspsend: 389 bytes to transport
+[03-FEB-2014 13:51:43:086] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:086] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:086] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:086] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:086] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:086] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:086] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:086] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:086] nttrd: entry
+[03-FEB-2014 13:51:43:087] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:43:087] nttrd: exit
+[03-FEB-2014 13:51:43:087] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:43:087] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:43:087] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:087] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:087] nioqrc: exit
+[03-FEB-2014 13:51:43:087] nioqsn: entry
+[03-FEB-2014 13:51:43:087] nioqsn: exit
+[03-FEB-2014 13:51:43:087] nioqrc: entry
+[03-FEB-2014 13:51:43:087] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:087] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:087] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:087] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:087] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:087] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:087] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:43:087] nttwr: entry
+[03-FEB-2014 13:51:43:087] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:43:087] nttwr: exit
+[03-FEB-2014 13:51:43:087] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:43:087] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:087] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:087] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:087] nttrd: entry
+[03-FEB-2014 13:51:43:087] nttrd: socket 18 had bytes read=320
+[03-FEB-2014 13:51:43:087] nttrd: exit
+[03-FEB-2014 13:51:43:087] nsprecv: 320 bytes from transport
+[03-FEB-2014 13:51:43:087] nsprecv: tlen=320, plen=320, type=6
+[03-FEB-2014 13:51:43:087] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:087] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:087] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:087] nioqrc: exit
+[03-FEB-2014 13:51:43:088] nioqsn: entry
+[03-FEB-2014 13:51:43:088] nioqsn: exit
+[03-FEB-2014 13:51:43:088] nioqrc: entry
+[03-FEB-2014 13:51:43:088] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:088] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:088] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:088] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:088] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:088] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:088] nspsend: plen=181, type=6
+[03-FEB-2014 13:51:43:088] nttwr: entry
+[03-FEB-2014 13:51:43:088] nttwr: socket 18 had bytes written=181
+[03-FEB-2014 13:51:43:088] nttwr: exit
+[03-FEB-2014 13:51:43:088] nspsend: 181 bytes to transport
+[03-FEB-2014 13:51:43:088] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:088] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:088] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:088] nttrd: entry
+[03-FEB-2014 13:51:43:088] nttrd: socket 18 had bytes read=176
+[03-FEB-2014 13:51:43:088] nttrd: exit
+[03-FEB-2014 13:51:43:088] nsprecv: 176 bytes from transport
+[03-FEB-2014 13:51:43:088] nsprecv: tlen=176, plen=176, type=6
+[03-FEB-2014 13:51:43:088] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:088] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:088] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:088] nioqrc: exit
+[03-FEB-2014 13:51:43:090] nioqsn: entry
+[03-FEB-2014 13:51:43:090] nioqsn: exit
+[03-FEB-2014 13:51:43:090] nioqrc: entry
+[03-FEB-2014 13:51:43:090] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:090] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:090] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:090] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:090] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:090] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:090] nspsend: plen=509, type=6
+[03-FEB-2014 13:51:43:090] nttwr: entry
+[03-FEB-2014 13:51:43:090] nttwr: socket 18 had bytes written=509
+[03-FEB-2014 13:51:43:090] nttwr: exit
+[03-FEB-2014 13:51:43:090] nspsend: 509 bytes to transport
+[03-FEB-2014 13:51:43:090] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:090] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:090] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:090] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:090] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:090] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:090] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:090] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:090] nttrd: entry
+[03-FEB-2014 13:51:43:091] nttrd: socket 18 had bytes read=162
+[03-FEB-2014 13:51:43:091] nttrd: exit
+[03-FEB-2014 13:51:43:091] nsprecv: 162 bytes from transport
+[03-FEB-2014 13:51:43:091] nsprecv: tlen=162, plen=162, type=6
+[03-FEB-2014 13:51:43:091] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:43:091] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:43:091] nioqrc: exit
+[03-FEB-2014 13:51:43:091] nioqsn: entry
+[03-FEB-2014 13:51:43:091] nioqsn: exit
+[03-FEB-2014 13:51:43:091] nioqrc: entry
+[03-FEB-2014 13:51:43:091] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:43:091] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:091] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:091] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:091] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:43:091] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:43:091] nspsend: plen=459, type=6
+[03-FEB-2014 13:51:43:091] nttwr: entry
+[03-FEB-2014 13:51:43:091] nttwr: socket 18 had bytes written=459
+[03-FEB-2014 13:51:43:091] nttwr: exit
+[03-FEB-2014 13:51:43:091] nspsend: 459 bytes to transport
+[03-FEB-2014 13:51:43:091] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:43:091] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:43:091] nsrdr: recving a packet
+[03-FEB-2014 13:51:43:091] nsprecv: reading from transport...
+[03-FEB-2014 13:51:43:091] nttrd: entry
+[03-FEB-2014 13:51:45:292] nttrd: socket 18 had bytes read=308
+[03-FEB-2014 13:51:45:292] nttrd: exit
+[03-FEB-2014 13:51:45:292] nsprecv: 308 bytes from transport
+[03-FEB-2014 13:51:45:292] nsprecv: tlen=308, plen=308, type=6
+[03-FEB-2014 13:51:45:292] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:292] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:292] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:292] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:292] nioqrc: exit
+[03-FEB-2014 13:51:45:293] nioqsn: entry
+[03-FEB-2014 13:51:45:293] nioqsn: exit
+[03-FEB-2014 13:51:45:294] nioqrc: entry
+[03-FEB-2014 13:51:45:294] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:294] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:294] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:294] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:294] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:294] nspsend: plen=373, type=6
+[03-FEB-2014 13:51:45:294] nttwr: entry
+[03-FEB-2014 13:51:45:294] nttwr: socket 18 had bytes written=373
+[03-FEB-2014 13:51:45:294] nttwr: exit
+[03-FEB-2014 13:51:45:294] nspsend: 373 bytes to transport
+[03-FEB-2014 13:51:45:294] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:294] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:294] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:294] nttrd: entry
+[03-FEB-2014 13:51:45:294] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:45:294] nttrd: exit
+[03-FEB-2014 13:51:45:294] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:45:294] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:45:294] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:294] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nioqrc: exit
+[03-FEB-2014 13:51:45:294] nioqsn: entry
+[03-FEB-2014 13:51:45:294] nioqsn: exit
+[03-FEB-2014 13:51:45:294] nioqrc: entry
+[03-FEB-2014 13:51:45:294] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:294] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:294] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:294] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:294] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:294] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:45:294] nttwr: entry
+[03-FEB-2014 13:51:45:294] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:45:294] nttwr: exit
+[03-FEB-2014 13:51:45:294] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:45:294] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:294] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:294] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:294] nttrd: entry
+[03-FEB-2014 13:51:45:294] nttrd: socket 18 had bytes read=479
+[03-FEB-2014 13:51:45:294] nttrd: exit
+[03-FEB-2014 13:51:45:294] nsprecv: 479 bytes from transport
+[03-FEB-2014 13:51:45:294] nsprecv: tlen=479, plen=479, type=6
+[03-FEB-2014 13:51:45:294] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:294] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:294] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:294] nioqrc: exit
+[03-FEB-2014 13:51:45:295] nioqsn: entry
+[03-FEB-2014 13:51:45:295] nioqsn: exit
+[03-FEB-2014 13:51:45:296] nioqrc: entry
+[03-FEB-2014 13:51:45:296] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:296] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:296] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:296] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:296] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:296] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:296] nspsend: plen=304, type=6
+[03-FEB-2014 13:51:45:296] nttwr: entry
+[03-FEB-2014 13:51:45:296] nttwr: socket 18 had bytes written=304
+[03-FEB-2014 13:51:45:296] nttwr: exit
+[03-FEB-2014 13:51:45:296] nspsend: 304 bytes to transport
+[03-FEB-2014 13:51:45:296] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:296] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:296] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:296] nttrd: entry
+[03-FEB-2014 13:51:45:296] nttrd: socket 18 had bytes read=523
+[03-FEB-2014 13:51:45:296] nttrd: exit
+[03-FEB-2014 13:51:45:296] nsprecv: 523 bytes from transport
+[03-FEB-2014 13:51:45:296] nsprecv: tlen=523, plen=523, type=6
+[03-FEB-2014 13:51:45:296] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:296] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:296] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:296] nioqrc: exit
+[03-FEB-2014 13:51:45:298] nioqsn: entry
+[03-FEB-2014 13:51:45:298] nioqsn: exit
+[03-FEB-2014 13:51:45:336] nioqrc: entry
+[03-FEB-2014 13:51:45:336] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:336] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:336] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:336] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:336] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:336] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:336] nspsend: plen=690, type=6
+[03-FEB-2014 13:51:45:336] nttwr: entry
+[03-FEB-2014 13:51:45:336] nttwr: socket 18 had bytes written=690
+[03-FEB-2014 13:51:45:336] nttwr: exit
+[03-FEB-2014 13:51:45:336] nspsend: 690 bytes to transport
+[03-FEB-2014 13:51:45:336] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:336] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:336] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:336] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:336] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:336] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:336] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:336] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:336] nttrd: entry
+[03-FEB-2014 13:51:45:336] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:51:45:336] nttrd: exit
+[03-FEB-2014 13:51:45:336] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:51:45:336] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:51:45:336] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:336] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:337] nioqrc: exit
+[03-FEB-2014 13:51:45:337] nioqsn: entry
+[03-FEB-2014 13:51:45:337] nioqsn: exit
+[03-FEB-2014 13:51:45:337] nioqrc: entry
+[03-FEB-2014 13:51:45:337] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:337] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:337] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:337] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:337] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:337] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:337] nspsend: plen=172, type=6
+[03-FEB-2014 13:51:45:337] nttwr: entry
+[03-FEB-2014 13:51:45:337] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:51:45:337] nttwr: exit
+[03-FEB-2014 13:51:45:337] nspsend: 172 bytes to transport
+[03-FEB-2014 13:51:45:337] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:337] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:337] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:337] nttrd: entry
+[03-FEB-2014 13:51:45:337] nttrd: socket 18 had bytes read=479
+[03-FEB-2014 13:51:45:337] nttrd: exit
+[03-FEB-2014 13:51:45:337] nsprecv: 479 bytes from transport
+[03-FEB-2014 13:51:45:337] nsprecv: tlen=479, plen=479, type=6
+[03-FEB-2014 13:51:45:337] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:51:45:337] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:51:45:337] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:51:45:337] nioqrc: exit
+[03-FEB-2014 13:51:45:338] nioqsn: entry
+[03-FEB-2014 13:51:45:338] nioqsn: exit
+[03-FEB-2014 13:51:45:338] nioqrc: entry
+[03-FEB-2014 13:51:45:338] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:51:45:338] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:338] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:338] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:338] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:51:45:338] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:51:45:338] nspsend: plen=304, type=6
+[03-FEB-2014 13:51:45:338] nttwr: entry
+[03-FEB-2014 13:51:45:338] nttwr: socket 18 had bytes written=304
+[03-FEB-2014 13:51:45:338] nttwr: exit
+[03-FEB-2014 13:51:45:338] nspsend: 304 bytes to transport
+[03-FEB-2014 13:51:45:338] nsdo: nsctxrnk=0
+[03-FEB-2014 13:51:45:338] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:51:45:338] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:51:45:338] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:51:45:338] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:51:45:338] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:51:45:338] nsrdr: recving a packet
+[03-FEB-2014 13:51:45:338] nsprecv: reading from transport...
+[03-FEB-2014 13:51:45:338] nttrd: entry
+[03-FEB-2014 13:52:48:979] nttrd: socket 18 had bytes read=316
+[03-FEB-2014 13:52:48:979] nttrd: exit
+[03-FEB-2014 13:52:48:979] nsprecv: 316 bytes from transport
+[03-FEB-2014 13:52:48:979] nsprecv: tlen=316, plen=316, type=6
+[03-FEB-2014 13:52:48:979] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:52:48:980] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:52:48:980] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:52:48:980] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:52:48:980] nioqrc: exit
+[03-FEB-2014 13:52:49:044] nioqsn: entry
+[03-FEB-2014 13:52:49:044] nioqsn: exit
+[03-FEB-2014 13:53:44:803] nioqrc: entry
+[03-FEB-2014 13:53:44:803] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:53:44:804] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:805] nsdo: nsctx: state=8, flg=0x2108400c, mvd=0
+[03-FEB-2014 13:53:44:805] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:805] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:53:44:805] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:53:44:805] nspsend: plen=375, type=6
+[03-FEB-2014 13:53:44:806] nttwr: entry
+[03-FEB-2014 13:53:44:806] nttwr: socket 18 had bytes written=375
+[03-FEB-2014 13:53:44:806] nttwr: exit
+[03-FEB-2014 13:53:44:806] nspsend: 375 bytes to transport
+[03-FEB-2014 13:53:44:807] nsdo: nsctxrnk=0
+[03-FEB-2014 13:53:44:807] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:53:44:807] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:807] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:807] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:808] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:53:44:808] nsrdr: recving a packet
+[03-FEB-2014 13:53:44:808] nsprecv: reading from transport...
+[03-FEB-2014 13:53:44:808] nttrd: entry
+[03-FEB-2014 13:53:44:809] nttrd: socket 18 had bytes read=21
+[03-FEB-2014 13:53:44:809] nttrd: exit
+[03-FEB-2014 13:53:44:809] nsprecv: 21 bytes from transport
+[03-FEB-2014 13:53:44:809] nsprecv: tlen=21, plen=21, type=6
+[03-FEB-2014 13:53:44:809] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:53:44:810] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:53:44:810] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:53:44:810] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:53:44:810] nioqrc: exit
+[03-FEB-2014 13:53:44:811] nioqsn: entry
+[03-FEB-2014 13:53:44:811] nioqsn: exit
+[03-FEB-2014 13:53:44:812] nioqrc: entry
+[03-FEB-2014 13:53:44:812] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:53:44:812] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:812] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:812] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:813] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:53:44:813] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:53:44:813] nspsend: plen=172, type=6
+[03-FEB-2014 13:53:44:813] nttwr: entry
+[03-FEB-2014 13:53:44:814] nttwr: socket 18 had bytes written=172
+[03-FEB-2014 13:53:44:814] nttwr: exit
+[03-FEB-2014 13:53:44:814] nspsend: 172 bytes to transport
+[03-FEB-2014 13:53:44:815] nsdo: nsctxrnk=0
+[03-FEB-2014 13:53:44:816] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:53:44:816] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:816] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:816] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:817] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:53:44:817] nsrdr: recving a packet
+[03-FEB-2014 13:53:44:817] nsprecv: reading from transport...
+[03-FEB-2014 13:53:44:817] nttrd: entry
+[03-FEB-2014 13:53:44:817] nttrd: socket 18 had bytes read=479
+[03-FEB-2014 13:53:44:818] nttrd: exit
+[03-FEB-2014 13:53:44:818] nsprecv: 479 bytes from transport
+[03-FEB-2014 13:53:44:818] nsprecv: tlen=479, plen=479, type=6
+[03-FEB-2014 13:53:44:818] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:53:44:819] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:53:44:819] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:53:44:819] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:53:44:819] nioqrc: exit
+[03-FEB-2014 13:53:44:822] nioqsn: entry
+[03-FEB-2014 13:53:44:822] nioqsn: exit
+[03-FEB-2014 13:53:44:824] nioqrc: entry
+[03-FEB-2014 13:53:44:824] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:53:44:824] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:825] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:826] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:826] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:53:44:826] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:53:44:826] nspsend: plen=304, type=6
+[03-FEB-2014 13:53:44:827] nttwr: entry
+[03-FEB-2014 13:53:44:827] nttwr: socket 18 had bytes written=304
+[03-FEB-2014 13:53:44:827] nttwr: exit
+[03-FEB-2014 13:53:44:827] nspsend: 304 bytes to transport
+[03-FEB-2014 13:53:44:828] nsdo: nsctxrnk=0
+[03-FEB-2014 13:53:44:828] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:53:44:828] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:828] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:828] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:829] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:53:44:829] nsrdr: recving a packet
+[03-FEB-2014 13:53:44:829] nsprecv: reading from transport...
+[03-FEB-2014 13:53:44:829] nttrd: entry
+[03-FEB-2014 13:53:44:830] nttrd: socket 18 had bytes read=13
+[03-FEB-2014 13:53:44:830] nttrd: exit
+[03-FEB-2014 13:53:44:830] nsprecv: 13 bytes from transport
+[03-FEB-2014 13:53:44:830] nsprecv: tlen=13, plen=13, type=6
+[03-FEB-2014 13:53:44:830] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:53:44:831] nsrdr: NSPTDA flags: 0x0
+[03-FEB-2014 13:53:44:831] nsfull_pkt_rcv: *what=1, *bl=8145
+[03-FEB-2014 13:53:44:831] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:53:44:831] nioqrc: exit
+[03-FEB-2014 13:53:44:836] nioqsn: entry
+[03-FEB-2014 13:53:44:836] nioqsn: exit
+[03-FEB-2014 13:53:44:836] nioqrc: entry
+[03-FEB-2014 13:53:44:836] nsdo: cid=0, opcode=84, *bl=0, *what=1, uflgs=0x20, cflgs=0x3
+[03-FEB-2014 13:53:44:836] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:837] nsdo: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:837] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:837] nsdofls: DATA flags: 0x0
+[03-FEB-2014 13:53:44:837] nsdofls: sending NSPTDA packet
+[03-FEB-2014 13:53:44:838] nspsend: plen=17, type=6
+[03-FEB-2014 13:53:44:838] nttwr: entry
+[03-FEB-2014 13:53:44:838] nttwr: socket 18 had bytes written=17
+[03-FEB-2014 13:53:44:838] nttwr: exit
+[03-FEB-2014 13:53:44:839] nspsend: 17 bytes to transport
+[03-FEB-2014 13:53:44:839] nsdo: nsctxrnk=0
+[03-FEB-2014 13:53:44:839] nsfull_pkt_rcv: cid=0, opcode=85, *bl=0, *what=0, uflgs=0x0, cflgs=0x0
+[03-FEB-2014 13:53:44:839] nsfull_pkt_rcv: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:840] nsfull_pkt_rcv: nsctx: state=8, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:840] nsfull_pkt_rcv: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:840] nsfull_pkt_rcv: switching to application buffer
+[03-FEB-2014 13:53:44:840] nsrdr: recving a packet
+[03-FEB-2014 13:53:44:840] nsprecv: reading from transport...
+[03-FEB-2014 13:53:44:841] nttrd: entry
+[03-FEB-2014 13:53:44:841] nttrd: socket 18 had bytes read=10
+[03-FEB-2014 13:53:44:841] nttrd: exit
+[03-FEB-2014 13:53:44:841] nsprecv: 10 bytes from transport
+[03-FEB-2014 13:53:44:841] nsprecv: tlen=10, plen=10, type=6
+[03-FEB-2014 13:53:44:842] nsrdr: got NSPTDA packet
+[03-FEB-2014 13:53:44:842] nsrdr: NSPTDA flags: 0x40
+[03-FEB-2014 13:53:44:842] nsdo: cid=0, opcode=85, *bl=8145, *what=0, uflgs=0x0, cflgs=0x1
+[03-FEB-2014 13:53:44:842] nsdo: nsctx: state=6, flg=0x2100600c, mvd=0
+[03-FEB-2014 13:53:44:842] nsdo: gtn=161, gtc=161, ptn=10, ptc=8155
+[03-FEB-2014 13:53:44:843] nsfull_pkt_rcv: nsctxrnk=0
+[03-FEB-2014 13:53:44:843] nioqer: entry
+[03-FEB-2014 13:53:44:843] nioqce: entry
+[03-FEB-2014 13:53:44:843] nioqce: exit
+[03-FEB-2014 13:53:44:844] nioqer: exit
+[03-FEB-2014 13:53:44:844] nioqrc: exit
+[03-FEB-2014 13:53:44:844] nioqds: entry
+[03-FEB-2014 13:53:44:846] nioqds:  disconnecting...
+[03-FEB-2014 13:53:44:846] nsdo: cid=0, opcode=67, *bl=0, *what=1, uflgs=0x2, cflgs=0x3
+[03-FEB-2014 13:53:44:846] nsdo: rank=64, nsctxrnk=0
+[03-FEB-2014 13:53:44:846] nsdo: nsctx: state=3, flg=0x2100400c, mvd=0
+[03-FEB-2014 13:53:44:846] nsdo: nsctxrnk=0
+[03-FEB-2014 13:53:44:847] nsvntx_dei: entry
+[03-FEB-2014 13:53:44:847] nsvntx_dei: exit
+[03-FEB-2014 13:53:44:847] nstimarmed: timer is armed, with value 0
+[03-FEB-2014 13:53:44:847] nttctl: entry
+[03-FEB-2014 13:53:44:848] nttctl: entry
+[03-FEB-2014 13:53:44:848] nsfull_cls: cid=0, opcode=65, *bl=0, *what=0, uflgs=0x0, cflgs=0x40
+[03-FEB-2014 13:53:44:848] nsfull_cls: nsctx: state=3, flg=0x21004008, mvd=0
+[03-FEB-2014 13:53:44:848] nsevunreg: cid=0, sgt=3, rdm=0
+[03-FEB-2014 13:53:44:849] nsevunreg: 0 registered connection(s)
+[03-FEB-2014 13:53:44:849] nsclose: closing transport
+[03-FEB-2014 13:53:44:849] nttdisc: entry
+[03-FEB-2014 13:53:44:850] nttdisc: Closed socket 18
+[03-FEB-2014 13:53:44:850] nttdisc: exit
+[03-FEB-2014 13:53:44:850] nsclose: global context check-out (from slot 0) complete
+[03-FEB-2014 13:53:44:850] nadisc: entry
+[03-FEB-2014 13:53:44:850] nacomtm: entry
+[03-FEB-2014 13:53:44:851] nacompd: entry
+[03-FEB-2014 13:53:44:851] nacompd: exit
+[03-FEB-2014 13:53:44:851] nacompd: entry
+[03-FEB-2014 13:53:44:851] nacompd: exit
+[03-FEB-2014 13:53:44:851] nacomtm: exit
+[03-FEB-2014 13:53:44:852] nas_dis: entry
+[03-FEB-2014 13:53:44:852] nas_dis: exit
+[03-FEB-2014 13:53:44:852] nau_dis: entry
+[03-FEB-2014 13:53:44:852] nau_dis: exit
+[03-FEB-2014 13:53:44:852] naeetrm: entry
+[03-FEB-2014 13:53:44:853] naeetrm: exit
+[03-FEB-2014 13:53:44:853] naectrm: entry
+[03-FEB-2014 13:53:44:853] naectrm: exit
+[03-FEB-2014 13:53:44:853] nagbltrm: entry
+[03-FEB-2014 13:53:44:853] nagbltrm: exit
+[03-FEB-2014 13:53:44:854] nadisc: exit
+[03-FEB-2014 13:53:44:854] nsvntx_dei: entry
+[03-FEB-2014 13:53:44:854] nsvntx_dei: exit
+[03-FEB-2014 13:53:44:855] nsmfr: 2760 bytes at 0x108642c0
+[03-FEB-2014 13:53:44:856] nsmfr: 1528 bytes at 0x10863cc0
+[03-FEB-2014 13:53:44:856] nioqds: exit
+[03-FEB-2014 13:53:44:856] nigtrm: Count in the NI global area is now 1
+[03-FEB-2014 13:53:44:856] nsbrfr: nsbfs at 0x1086a4f0, data at 0x1086a5a0.
+[03-FEB-2014 13:53:44:856] nsbrfr: nsbfs at 0x1086c5c0, data at 0x1086c670.
+[03-FEB-2014 13:53:44:857] nsbrfr: nsbfs at 0x10864f90, data at 0x1086e690.
+[03-FEB-2014 13:53:44:857] nsbrfr: nsbfs at 0x10867ea0, data at 0x10865040.
+[03-FEB-2014 13:53:44:857] nsbrfr: nsbfs at 0x1086a230, data at 0x108706b0.
+[03-FEB-2014 13:53:44:857] nigtrm: Count in the NL global area is now 3
+[03-FEB-2014 13:53:44:873] nagbltrm: entry
+[03-FEB-2014 13:53:44:874] nau_gtm: entry
+[03-FEB-2014 13:53:44:875] nau_gtm: exit
+[03-FEB-2014 13:53:44:875] nagbltrm: exit
+[03-FEB-2014 13:53:44:876] nnfgdei: entry

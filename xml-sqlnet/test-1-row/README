@@ -1,0 +1,14 @@
+
+same tests as ../oracle-l but for a few things 
+- just 1 row is created 
+- no 10046 tracing
+
+use for tracing with gdb
+
+Use Frits profiler
+
+source pstruct.gdb
+source prowsources.gdb
+
+
+

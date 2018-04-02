@@ -1,0 +1,76 @@
+Trace file /u01/app/oracle/diag/rdbms/js02/js02/trace/js02_ora_28307_VARCHAR-10046.trc
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, Automatic Storage Management, Data Mining and Real Application Testing options
+ORACLE_HOME = /u01/app/oracle/product/11.2.0/db
+System name:	Linux
+Node name:	ora112304a.jks.com
+Release:	3.8.13-16.2.1.el6uek.x86_64
+Version:	#1 SMP Thu Nov 7 17:01:44 PST 2013
+Machine:	x86_64
+Instance name: js02
+Redo thread mounted by this instance: 1
+Oracle process number: 32
+Unix process pid: 28307, image: oracle@ora112304a.jks.com
+
+
+*** 2014-07-18 03:00:09.552
+*** SESSION ID:(30.16899) 2014-07-18 03:00:09.553
+*** CLIENT ID:() 2014-07-18 03:00:09.553
+*** SERVICE NAME:(js02) 2014-07-18 03:00:09.553
+*** MODULE NAME:(sqlplus@poirot (TNS V1-V3)) 2014-07-18 03:00:09.553
+*** ACTION NAME:() 2014-07-18 03:00:09.553
+ 
+WAIT #139638687867048: nam='SQL*Net message to client' ela= 2 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809542643
+WAIT #139638687867048: nam='SQL*Net message from client' ela= 523 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809553565
+CLOSE #139638687867048:c=0,e=10,dep=0,type=1,tim=1405666809553626
+=====================
+PARSING IN CURSOR #139638687933256 len=70 dep=0 uid=0 oct=3 lid=0 tim=1405666809585338 hv=2071111994 ad='78227cc8' sqlid='7uzkg3dxr5a9u'
+select table_name, chardata
+from jkstill.xmltest_1
+order by table_name
+END OF STMT
+PARSE #139638687933256:c=1000,e=31681,p=0,cr=0,cu=0,mis=1,r=0,dep=0,og=1,plh=2541877341,tim=1405666809585336
+EXEC #139638687933256:c=0,e=41,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,plh=2541877341,tim=1405666809585475
+WAIT #139638687933256: nam='SQL*Net message to client' ela= 2 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809585502
+FETCH #139638687933256:c=0,e=236,p=0,cr=14,cu=0,mis=0,r=1,dep=0,og=1,plh=2541877341,tim=1405666809585759
+WAIT #139638687933256: nam='SQL*Net message from client' ela= 1415 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809587215
+WAIT #139638687933256: nam='SQL*Net message to client' ela= 1 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809587281
+WAIT #139638687933256: nam='SQL*Net more data to client' ela= 85 driver id=1413697536 #bytes=8185 p3=0 obj#=-1 tim=1405666809587387
+FETCH #139638687933256:c=0,e=140,p=0,cr=0,cu=0,mis=0,r=16,dep=0,og=1,plh=2541877341,tim=1405666809587413
+STAT #139638687933256 id=1 cnt=17 pid=0 pos=1 obj=0 op='SORT ORDER BY (cr=14 pr=0 pw=0 time=232 us cost=6 size=11577 card=17)'
+STAT #139638687933256 id=2 cnt=17 pid=1 pos=1 obj=81618 op='TABLE ACCESS FULL XMLTEST_1 (cr=14 pr=0 pw=0 time=125 us cost=5 size=11577 card=17)'
+WAIT #139638687933256: nam='SQL*Net message from client' ela= 6610 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809594109
+CLOSE #139638687933256:c=0,e=30,dep=0,type=0,tim=1405666809594250
+=====================
+PARSING IN CURSOR #139638687931368 len=44 dep=2 uid=0 oct=3 lid=0 tim=1405666809615570 hv=2595891848 ad='8aea2a18' sqlid='9d7fh4kdbnan8'
+SELECT inst_id, name, value FROM x$diag_info
+END OF STMT
+PARSE #139638687931368:c=1000,e=1099,p=0,cr=0,cu=0,mis=1,r=0,dep=2,og=4,plh=1636480816,tim=1405666809615569
+CLOSE #139638687931368:c=0,e=6,dep=2,type=0,tim=1405666809615662
+=====================
+PARSING IN CURSOR #139638687932312 len=91 dep=1 uid=0 oct=3 lid=0 tim=1405666809616056 hv=361824985 ad='782768a0' sqlid='30kn9dhat20qt'
+SELECT inst_id, name, value FROM gv$diag_info          WHERE  inst_id = USERENV('INSTANCE')
+END OF STMT
+PARSE #139638687932312:c=3000,e=1962,p=0,cr=0,cu=0,mis=1,r=0,dep=1,og=4,plh=1636480816,tim=1405666809616055
+CLOSE #139638687932312:c=0,e=4,dep=1,type=0,tim=1405666809616117
+=====================
+PARSING IN CURSOR #139638687933256 len=63 dep=0 uid=0 oct=3 lid=0 tim=1405666809617382 hv=462614443 ad='7839b880' sqlid='0gjpt6cdt5vxb'
+select value from v$diag_info where name = 'Default Trace File'
+END OF STMT
+PARSE #139638687933256:c=3000,e=23040,p=0,cr=0,cu=0,mis=1,r=0,dep=0,og=1,plh=1636480816,tim=1405666809617355
+EXEC #139638687933256:c=1000,e=54,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,plh=1636480816,tim=1405666809617529
+WAIT #139638687933256: nam='SQL*Net message to client' ela= 3 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809617578
+FETCH #139638687933256:c=0,e=44,p=0,cr=0,cu=0,mis=0,r=1,dep=0,og=1,plh=1636480816,tim=1405666809617644
+WAIT #139638687933256: nam='SQL*Net message from client' ela= 472 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809618150
+WAIT #139638687933256: nam='ADR block file read' ela= 10553  =0  =0  =0 obj#=-1 tim=1405666809629125
+WAIT #139638687933256: nam='ADR block file read' ela= 6838  =0  =0  =0 obj#=-1 tim=1405666809636175
+WAIT #139638687933256: nam='ADR block file read' ela= 266  =0  =0  =0 obj#=-1 tim=1405666809636614
+WAIT #139638687933256: nam='ADR block file read' ela= 633  =0  =0  =0 obj#=-1 tim=1405666809637282
+WAIT #139638687933256: nam='ADR block file read' ela= 384  =0  =0  =0 obj#=-1 tim=1405666809638029
+WAIT #139638687933256: nam='ADR block file read' ela= 326  =0  =0  =0 obj#=-1 tim=1405666809638545
+FETCH #139638687933256:c=1000,e=20409,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,plh=1636480816,tim=1405666809638603
+STAT #139638687933256 id=1 cnt=1 pid=0 pos=1 obj=0 op='FIXED TABLE FULL X$DIAG_INFO (cr=0 pr=0 pw=0 time=40 us cost=0 size=305 card=1)'
+WAIT #139638687933256: nam='SQL*Net message to client' ela= 2 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809638683
+WAIT #139638687933256: nam='SQL*Net message from client' ela= 802 driver id=1413697536 #bytes=1 p3=0 obj#=-1 tim=1405666809639499
+XCTEND rlbk=0, rd_only=1, tim=1405666809639561
+CLOSE #139638687933256:c=0,e=6,dep=0,type=0,tim=1405666809639652
