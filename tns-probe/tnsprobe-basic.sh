@@ -1,11 +1,18 @@
 #!/bin/bash
 
 TESTMODE=0
-TIMEOUT_DURATION=.5
+TIMEOUT_DURATION=.1
 
 # assumed Oracle Env ie already set
 
 #. oraenv <<< ORCL
+
+[[ -x $ORACLE_HOME/bin/tnsping ]] || {
+	echo
+	echo "tnsping not found - is Oracle Environment configured?"
+	echo
+	exit 1
+}
 
 declare -a domainList
 
@@ -23,8 +30,8 @@ di=0
 
 if [ $TESTMODE -gt 0 ]; then
 	maxDomain=1
-	serverMin=99
-	serverMax=101
+	serverMin=221
+	serverMax=222
 else
 	maxDomain=${#domainList[*]}
 	serverMin=2
@@ -51,14 +58,11 @@ do
 			remoteHost=$(dig -x $address +short |  sed -e 's/\.$//')
 		fi
 
-		if [ $TESTMODE -gt 0 ]; then
-			echo "Remote: $remoteHost"
-		fi
 
 		if [[ -n $remoteHost ]]; then
 			#	now just look for listener on port 1521
 			# or a range of ports
-			echo -n " - checking tnsping"
+			echo -n " Remote: $remoteHost - checking tnsping "
 
 			for tnsport in $(seq 1500 1599)
 			do
