@@ -20,6 +20,15 @@ For each LISTENER entry in listener.ora, there should be at most 1 SID_LIST_LIST
 
 Listener Example 1 shows a simple listener configuration
 
+Test Environment
+
+- Server
+  - Oracle Linux 6.5
+  - Oracle 12.1.0.2
+- Client
+  - Linux Mint 18
+  - Oracle 12.1.0.2 client
+
 Listener Example 1.
 
 ```bash
@@ -43,6 +52,32 @@ SID_LIST_LISTENER =
 
 ```
 
+With this configuration the db instance will show a status of 'UNKNOWN'.  This is normal.
+
+```bash
+LSNRCTL> status
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))
+STATUS of the LISTENER
+------------------------
+Alias                     LISTENER
+Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
+Start Date                08-MAY-2019 12:17:57
+Uptime                    0 days 0 hr. 0 min. 2 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /u01/app/grid/product/12.1.0/grid/network/admin/listener.ora
+Listener Log File         /u01/app/grid/diag/tnslsnr/ora12102b/listener/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
+Services Summary...
+Service "js03" has 1 instance(s).
+  Instance "js03", status UNKNOWN, has 1 handler(s) for this service...
+The command completed successfully
+LSNRCTL>
+```
+
 A local TNS entry of 'js03dr' was made on the client side.
 
 This was named with the suffix of 'dr' to make it a unique name, as 'js03' is a name that is normally resolved by LDAP.
@@ -63,6 +98,8 @@ js03dr =
     )
   )
 ```
+
+Note: Tests were performed with and without including  ```(GLOBAL_NAME=js03)``` in the CONNECT_DATA section.  On this version of Oracle it made no difference either way.
 
 
 The js03 instance is currently down on server 192.168.1.92.
@@ -130,6 +167,87 @@ Database opened.
 SYS@js03dr AS SYSDBA>
 
 ```
+
+## Multiple Static Registrations
+
+It is not uncommon for a server to have multiple databases, and so it may be necessary to have multiple static listener entries in the listener.ora file.
+
+### The Correct Method
+
+The correct way to do this when there is just one listener is to have multiple ```SID_LIST``` sections within ```SID_LIST_LISTENER```
+
+Listener 2 Example
+
+```bash
+LISTENER =
+  (DESCRIPTION_LIST =
+    (DESCRIPTION =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC1521))
+    )
+  )
+
+SID_LIST_LISTENER =
+  (SID_LIST =
+    (SID_DESC =
+      (ORACLE_HOME = /u01/app/grid/product/12.1.0/grid )
+      (SID_NAME = +ASM)
+    )
+    (SID_DESC =
+      (ORACLE_HOME = /u01/app/oracle/product/12.1.0/db1 )
+      (SID_NAME = js03)
+    )
+  )
+```
+
+Here is lsnrctl status output for this configuration:
+
+```bash
+LSNRCTL> status
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))
+STATUS of the LISTENER
+------------------------
+Alias                     LISTENER
+Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production
+Start Date                08-MAY-2019 12:19:36
+Uptime                    0 days 0 hr. 2 min. 44 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /u01/app/grid/product/12.1.0/grid/network/admin/listener.ora
+Listener Log File         /u01/app/grid/diag/tnslsnr/ora12102b/listener/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
+Services Summary...
+Service "+ASM" has 2 instance(s).
+  Instance "+ASM", status UNKNOWN, has 1 handler(s) for this service...
+  Instance "+ASM", status READY, has 1 handler(s) for this service...
+Service "js03" has 1 instance(s).
+  Instance "js03", status UNKNOWN, has 1 handler(s) for this service...
+The command completed successfully
+LSNRCTL>
+
+```
+
+The ASM instance has 2 handlers; the dynamically registered handler is READY, while the static handler is UNKOWN.
+
+As the js03 instance is down (it was stopped again after the previous startup) the only handler that appears is the static registration, with a status of UNKNOWN.
+
+
+### The Not so Correct Method
+
+While multiple SID_LIST_LISTENER sections are allowed, doing so only works properly when multiple listeners are configured (more on this later)
+
+But, what happens if multiple SID_LIST_LISTENER sections are configured for a single listener?
+
+Let's try it and find out.
+
+
+
+
+
+
 
 
 
