@@ -376,6 +376,7 @@ Multiple SID_LIST_LISTENER sections can be configured when the are multiple list
 If for example there are 2 listeners configured, there could be two corresponding SID_LIST_LISTENER sections configured as in Listener Example 5.
 
 Listener Example 5
+
 ```bash
 
 LISTENER =
